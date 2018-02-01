@@ -1,0 +1,9 @@
+Building vDinar
+
+See doc/readme-qt.rst for instructions on building vDinar-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of vDinar.
+
+See doc/build-*.txt for instructions on building vdinard,
+the intended-for-services, no-graphical-interface, reference
+implementation of vDinar.
