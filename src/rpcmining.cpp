@@ -483,7 +483,11 @@ Value getblocktemplate(const Array& params, bool fHelp)
             pblocktemplate = NULL;
         }
         CScript scriptDummy = CScript() << OP_TRUE;
-        CScript scriptDonationsPubKey = CScript() << OP_TRUE;
+        //CScript scriptDonationsPubKey = CScript() << OP_TRUE;
+        CBitcoinAddress donationsAddress;
+        donationsAddress.SetString("DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB");
+        CScript scriptDonationsPubKey; // = CScript() << donationspubkey << OP_CHECKSIG;
+        scriptDonationsPubKey.SetDestination(donationsAddress.Get());
         pblocktemplate = CreateNewBlock(scriptDummy, scriptDonationsPubKey);
         if (!pblocktemplate)
             throw JSONRPCError(RPC_OUT_OF_MEMORY, "Out of memory");
