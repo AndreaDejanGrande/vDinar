@@ -35,7 +35,14 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (  0, uint256("0x5ef756bea8ef0fe2bede9461d8c195c622f783b132b06ea3941c9e956639a6f9")) //148eae7b5cbe230f8bb67453d99e3f9921e4697fc62dd5ed95feb7fab3fe6f5e
+        (    0, uint256("0x5ef756bea8ef0fe2bede9461d8c195c622f783b132b06ea3941c9e956639a6f9")) //GENESIS
+        ( 2500, uint256("0x1ad7042da2ada926152060d8adf0454e78e1b735755b3777a3a6ef11a700c988")) //2500  chekpoints every 2.5k blocks for first 10k blocks
+        ( 5000, uint256("0x7f3d4b1f450f44054be97a911d06a4aab9cccda42736adaccb80e6512abc6106")) //5000
+        ( 7500, uint256("0x5600fdb061453b324bf279283c361ecca01ad5889caf76aba7ff943ae4872fa3")) //7500
+        (10000, uint256("0x60863e4019b0531cd595b51f3da63bc156638f254c4a08da021fc6c3bd6dafe6")) //10000
+        (10565, uint256("0x6527b36d18f451f4008ea9d830815315464b268bdfe8e231d4ad7e6bce473aae")) //PATCH solving 1.0's DisconnectBlock() error crashing wallets on restart and long term run:
+                                                                                               //      blocks before shutdowns have to be put as checkpoints to avoid accepting forks made
+                                                                                               //      during pauses
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,

@@ -1567,7 +1567,7 @@ bool CBlock::DisconnectBlock(CValidationState &state, CBlockIndex *pindex, CCoin
 
         // restore inputs
         if (i > 1) { // not coinbases
-            const CTxUndo &txundo = blockUndo.vtxundo[i-1];
+            const CTxUndo &txundo = blockUndo.vtxundo[i-2]; //i - 2(coinbases); old code from 1.0: i - 1 (wrong)
             if (txundo.vprevout.size() != tx.vin.size())
                 return error("DisconnectBlock() : transaction and undo data inconsistent");
             for (unsigned int j = tx.vin.size(); j-- > 0;) {
