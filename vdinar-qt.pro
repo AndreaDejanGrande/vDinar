@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = vdinar-qt
 macx:TARGET = "vDinar-Qt"
-VERSION = 1.0.0.0
+VERSION = 0.8.7.4
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
