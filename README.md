@@ -20,9 +20,30 @@ What's new in vDinar?
 
 **2.5 minute block target, subsidy halves in 840k blocks (~4 years)**
 
-The rest is the same as Bitcoin.
- - **50 coins per block**
+ - **49+1 coins per block (49 to miner, 1 to donations)**
  - **2016 blocks to retarget difficulty**
+
+Technical explanation
+---------------------
+
+Block structure differences (from Bitcoin)
+ - **2 coinbase (no input) transactions instead of one**
+ - **both coinbase transactions include the same extranonce**
+
+Pooled mining differences (server side):
+   **(On work request)**
+ - **create two coinbase transactions instead of one**
+ - **assign the 49 coins to first coinbase**
+ - **assign 1/49 of the first coinbase transaction value to the second one**
+ - **store merkle steps from the 2nd lvl., considering two unknown values (coinb. txs) in the 1st one**
+ - **send splitted coinbase transactions (coinb1, coinb2, doncoinb1, doncoinb2), merkle steps and all the rest**
+   **(On share received)**
+ - **hash coinb. and don. coinb. txs**
+ - **build hash merkle root with the latter result hashed with merkle steps one by one**
+
+Pooled mining differences (client side):
+ - **receive 2 new values (doncoinb1, doncoinb2)**
+ - **build hash merkle root with first two txs as coinb. and don. coinb. (both with same extranonce)**
 
 License
 -------
