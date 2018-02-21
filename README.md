@@ -1,7 +1,9 @@
 vDINAR
-================================
+======
 
 https://www.jugoslaven.com - https://vdinar.jugoslaven.com
+
+<img src="https://vdinar.jugoslaven.com/slike/Template-YugoslavGold960px.png" width="300px" height="300px">
 
 Copyright (c) 2009-2014 Bitcoin Developers
 
@@ -9,7 +11,7 @@ Copyright (c) 2011-2014 Litecoin Developers
 
 Copyright (c) 2017 vDinar Developers
 
-What is vDinar?
+What is vDinar? <img src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 ----------------
 
 vDinar is a cryptocurrency using vCrypt as a proof-of-work algorithm, aimed to help money transactions between southern slavic countries. Of course, it is available to everyone else besides being from Balkans or not.
