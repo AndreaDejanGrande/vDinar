@@ -1,4 +1,4 @@
-vDINAR
+vDINAR <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="40px" height="40px">
 ======
 
 https://www.jugoslaven.com - https://vdinar.jugoslaven.com
@@ -11,7 +11,7 @@ Copyright (c) 2011-2014 Litecoin Developers
 
 Copyright (c) 2017 vDinar Developers
 
-What is vDinar? <img src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
+What is vDinar? <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 ----------------
 
 vDinar is a cryptocurrency using vCrypt as a proof-of-work algorithm, aimed to help money transactions between southern slavic countries. Of course, it is available to everyone else besides being from Balkans or not.
@@ -25,7 +25,7 @@ What's new in vDinar?
  - **49+1 coins per block (49 to miner, 1 to donations)**
  - **2016 blocks to retarget difficulty**
 
-Technical explanation
+Technical explanation <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 ---------------------
 
 Block structure differences (from Bitcoin)
@@ -47,13 +47,13 @@ Pooled mining differences (client side):
  - **receive 2 new values (doncoinb1, doncoinb2)**
  - **build hash merkle root with first two txs as coinb. and don. coinb. (both with same extranonce)**
 
-License
+License <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 -------
 
 vDinar is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
-Development process
+Development process <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 -------------------
 
 Developers work in their own trees, then submit pull requests when they think
@@ -74,14 +74,14 @@ The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/AndreaDejanGrande/vDinar/tags) are created
 regularly to indicate new official, stable release versions of Litecoin.
 
-Testing
+Testing <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 -------
 
 Testing and code review is the bottleneck for development. Please be patient and help out, and
 remember this is a security-critical project where any mistake might cost people
 lots of money.
 
-### Automated Testing
+### Automated Testing <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="24px" height="24px">
 
 Developers are strongly encouraged to write unit tests for new code, and to
 submit new unit tests for old code.
@@ -96,6 +96,6 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     make -f Makefile.test
     ./vdinar-qt_test
 
-### Donations
+### Donations <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="24px" height="24px">
 
 Just use vDinar, that's the best donation!
