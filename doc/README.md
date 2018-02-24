@@ -1,4 +1,4 @@
-vDinar 0.8.x BETA
+vDinar 1.x
 ====================
 
 Copyright (c) 2009-2014 Bitcoin Developers
