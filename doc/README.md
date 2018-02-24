@@ -2,7 +2,9 @@ vDinar 1.x
 ====================
 
 Copyright (c) 2009-2014 Bitcoin Developers
+
 Copyright (c) 2011-2014 Litecoin Developers
+
 Copyright (c) 2017-2018 vDinar Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
