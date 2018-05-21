@@ -54,6 +54,7 @@ uint32_t vCrypt_N(uint32_t nHeight)
  {
   nFactor *= 2;
   left -= span;
+  span *= 2;
  }
 
  return nFactor;
