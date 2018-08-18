@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     QApplication::setOrganizationName("vDinar");
-    QApplication::setOrganizationDomain("vdinar.org");
+    QApplication::setOrganizationDomain("vdinar.info");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
         QApplication::setApplicationName("vDinar-Qt-testnet");
     else
@@ -264,6 +264,8 @@ int main(int argc, char *argv[])
                     window.addWallet("~Default", walletModel);
                     window.setCurrentWallet("~Default");
                 }
+
+                window.setStyleSheet("QMainWindow {background: rgb(246, 227, 208);}");
 
                 // If -min option passed, start window minimized.
                 if(GetBoolArg("-min"))

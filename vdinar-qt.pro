@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = vdinar-qt
 macx:TARGET = "vDinar-Qt"
-VERSION = 0.8.7.4
+VERSION = 2.0.0.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -147,7 +147,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/aboutdialog.h \
     src/qt/editaddressdialog.h \
     src/qt/bitcoinaddressvalidator.h \
-    src/alert.h \
     src/addrman.h \
     src/base58.h \
     src/bignum.h \
@@ -234,7 +233,6 @@ SOURCES += src/qt/bitcoin.cpp \
     src/qt/aboutdialog.cpp \
     src/qt/editaddressdialog.cpp \
     src/qt/bitcoinaddressvalidator.cpp \
-    src/alert.cpp \
     src/version.cpp \
     src/sync.cpp \
     src/util.cpp \

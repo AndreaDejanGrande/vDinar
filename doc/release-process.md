@@ -14,11 +14,11 @@ Release Process
 
 ###tag version in git
 
-	git tag -s v0.8.7
+	git tag -s v2.0
 
 ###write release notes. git shortlog helps a lot, for example:
 
-	git shortlog --no-merges v0.7.2..v0.8.0
+	git shortlog --no-merges v1.0.1...v.2.0
 
 * * *
 
@@ -88,7 +88,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 **Perform Mac build:**
 
   OSX binaries are created on a dedicated 32-bit, OSX 10.6.8 machine.
-  vDinar 0.8.x is built with MacPorts.  0.9.x will be Homebrew only.
+  vDinar is built with MacPorts.
 
 	qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1
 	make
@@ -98,18 +98,6 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 	python2.7 contrib/macdeploy/macdeployqtplus vDinar-Qt.app -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
 
  Build output expected: vDinar-Qt.dmg
-
-###Next steps:
-
-* Code-sign Windows -setup.exe (in a Windows virtual machine) and
-  OSX Bitcoin-Qt.app (Note: only Gavin has the code-signing keys currently)
-
-* update vdinar.org version
-  make sure all OS download links go to the right versions
-
-* update forum version
-
-* update wiki download links
 
 Commit your signature to gitian.sigs:
 

@@ -5,9 +5,9 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.0.0.0
-!define COMPANY "Jugoslaven"
-!define URL http://www.jugoslaven.com/
+!define VERSION 2.0.0.0
+!define COMPANY "vDinar"
+!define URL https://www.vdinar.info/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"

@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(246, 227, 208)</string>
+  </property>
   <layout class="QVBoxLayout" name="topLayout">
    <item>
     <widget class="QLabel" name="labelAlerts">
@@ -52,6 +58,9 @@
                 <weight>75</weight>
                 <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(230, 102, 32);</string>
               </property>
               <property name="text">
                <string>Wallet</string>
@@ -102,6 +111,9 @@
             </property>
             <item row="0" column="0">
              <widget class="QLabel" name="label">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(104, 41, 7);</string>
+              </property>
               <property name="text">
                <string>Balance:</string>
               </property>
@@ -121,6 +133,9 @@
               <property name="toolTip">
                <string>Your current balance</string>
               </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(230, 102, 32);</string>
+              </property>
               <property name="text">
                <string notr="true">0 VDN</string>
               </property>
@@ -131,6 +146,9 @@
             </item>
             <item row="1" column="0">
              <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(104, 41, 7);</string>
+              </property>
               <property name="text">
                <string>Unconfirmed:</string>
               </property>
@@ -150,6 +168,9 @@
               <property name="toolTip">
                <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
               </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(230, 102, 32);</string>
+              </property>
               <property name="text">
                <string notr="true">0 VDN</string>
               </property>
@@ -160,6 +181,9 @@
             </item>
             <item row="2" column="0">
              <widget class="QLabel" name="labelImmatureText">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(104, 41, 7);</string>
+              </property>
               <property name="text">
                <string>Immature:</string>
               </property>
@@ -175,6 +199,9 @@
               </property>
               <property name="toolTip">
                <string>Mined balance that has not yet matured</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(230, 102, 32);</string>
               </property>
               <property name="text">
                <string notr="true">0 VDN</string>
@@ -219,6 +246,9 @@
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
              <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(230, 102, 32);</string>
+              </property>
               <property name="text">
                <string>&lt;b&gt;Recent transactions&lt;/b&gt;</string>
               </property>

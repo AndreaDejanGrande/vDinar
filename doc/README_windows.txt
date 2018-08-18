@@ -1,4 +1,4 @@
-vDinar 1.x
+vDinar 2.x
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
@@ -13,10 +13,10 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-vDinar is a free open source peer-to-peer electronic cash system that is
-completely decentralized, without the need for a central server or trusted
-parties.  Users hold the crypto keys to their own money and transact directly
-with each other, with the help of a P2P network to check for double-spending.
+
+vDinar is a cryptocurrency using vCrypt as a proof-of-work algorithm, aimed
+to help money transactions between southern slavic countries. Of course, it
+is available to everyone else besides being from Balkans or not.
 
 
 Setup

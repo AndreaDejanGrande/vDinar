@@ -1,9 +1,7 @@
-vDINAR <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="40px" height="40px">
+vDinar - virtualni Dinar <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="40px" height="40px">
 ======
 
-https://www.jugoslaven.com - https://vdinar.jugoslaven.com
-
-<img src="https://vdinar.jugoslaven.com/slike/Template-YugoslavGold960px.png" width="300px" height="300px">
+https://www.vdinar.info
 
 Copyright (c) 2009-2014 Bitcoin Developers
 
