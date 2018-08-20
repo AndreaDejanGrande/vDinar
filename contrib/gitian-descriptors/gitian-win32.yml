@@ -11,13 +11,13 @@ packages:
 - "unzip"
 - "nsis"
 - "faketime"
-reference_datetime: "2011-01-30 00:00:00"
-remotes: []
+reference_datetime: "2018-08-19 00:00:00"
+remotes:
+- "url": "https://github.com/AndreaDejanGrande/vDinar.git"
 files:
 - "qt-win32-4.8.5-gitian-r7.zip"
 - "boost-win32-1.55.0-gitian-r6.zip"
 - "bitcoin08-deps-win32-gitian-r12.zip"
-- "vdinar.zip"
 script: |
   #
   STAGING=$HOME/staging
@@ -30,9 +30,6 @@ script: |
   unzip ../build/bitcoin08-deps-win32-gitian-r12.zip
   cd $HOME/build/
   #
-  unzip vdinar.zip
-  cp -R vDinar $OUTDIR/src
-  cp -R vDinar nsis
   cd vDinar
   export PATH=$STAGING/host/bin:$PATH
   cp $OUTDIR/src/doc/README_windows.txt $OUTDIR/readme.txt
