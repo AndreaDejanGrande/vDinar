@@ -34,7 +34,7 @@ enum WalletFeature
     FEATURE_WALLETCRYPT = 0, // wallet encryption
     FEATURE_COMPRPUBKEY = 0, // compressed public keys
 
-    FEATURE_LATEST = 100010 // 10 * Version Major (2 ciphers or more), 10 * Version Minor (2 ciphers or more), 1 * Revision, 1 * Build
+    FEATURE_LATEST = 200000 // 10 * Version Major (2 ciphers or more), 10 * Version Minor (2 ciphers or more), 1 * Revision, 1 * Build
 };
 
 
