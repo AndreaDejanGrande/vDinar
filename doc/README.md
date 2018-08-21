@@ -1,4 +1,4 @@
-vDinar 1.x
+vDinar 2.x
 ====================
 
 Copyright (c) 2009-2014 Bitcoin Developers
@@ -33,7 +33,7 @@ Unpack the files into a directory and run:
 - bin/64/vdinar-qt (GUI, 64-bit)
 - bin/64/vdinard (headless, 64-bit)
 
-See the documentation at the [vDinar Wiki](http://vdinar.info)
+See the documentation at the [vDinar Website](https://vdinar.info)
 for help and more information.
 
 
