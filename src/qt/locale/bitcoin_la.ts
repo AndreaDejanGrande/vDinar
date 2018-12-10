@@ -247,7 +247,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vDINARS&lt;/b&gt;!</source>
         <translation>Monitio: Si cassidile tuum cifras et tesseram amittis, tu &lt;b&gt;AMITTES OMNES TUOS NUMMOS BITOS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -274,7 +274,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-56"/>
-        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vdinars from being stolen by malware infecting your computer.</source>
+        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vDinars from being stolen by malware infecting your computer.</source>
         <translation>vDinar iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
     </message>
     <message>
@@ -1068,7 +1068,7 @@ Inscriptio: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start vdinar: click-to-pay handler</source>
+        <source>Cannot start vDinar: click-to-pay handler</source>
         <translation>vDinar incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
 </context>
@@ -1318,8 +1318,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>123.456 VDN</source>
+        <translation>123.456 VDN</translation>
     </message>
     <message>
         <location line="+31"/>

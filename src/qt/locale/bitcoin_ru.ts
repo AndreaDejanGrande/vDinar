@@ -248,8 +248,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете бумажник и потеряете пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ LITECOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vDINARS&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете бумажник и потеряете пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ vDINAR&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vdinars from being stolen by malware infecting your computer.</source>
+        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vDinars from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши vDinar от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -1069,8 +1069,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start vdinar: click-to-pay handler</source>
-        <translation>Не удаётся запустить vdinar: обработчик click-to-pay</translation>
+        <source>Cannot start vDinar: click-to-pay handler</source>
+        <translation>Не удаётся запустить vDinar: обработчик click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -1319,8 +1319,8 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>123.456 VDN</source>
+        <translation>123.456 VDN</translation>
     </message>
     <message>
         <location line="+31"/>

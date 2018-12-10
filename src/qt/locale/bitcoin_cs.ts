@@ -248,8 +248,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Varování: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY LITECOINY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vDINARS&lt;/b&gt;!</source>
+        <translation>Varování: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY vDINARY&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,8 +275,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-56"/>
-        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vdinars from being stolen by malware infecting your computer.</source>
-        <translation>vDinar se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých vdinarů malwarem, kterým se může počítač nakazit.</translation>
+        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vDinars from being stolen by malware infecting your computer.</source>
+        <translation>vDinar se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých vDinarů malwarem, kterým se může počítač nakazit.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -945,7 +945,7 @@ Adresa: %4
     <message>
         <location line="+9"/>
         <source>Whether to show vDinar addresses in the transaction list or not.</source>
-        <translation>Zda ukazovat vdinarové adresy ve výpisu transakcí nebo ne.</translation>
+        <translation>Zda ukazovat vDinarové adresy ve výpisu transakcí nebo ne.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1069,8 +1069,8 @@ Adresa: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start vdinar: click-to-pay handler</source>
-        <translation>Nemůžu spustit vdinar: obsluha click-to-pay</translation>
+        <source>Cannot start vDinar: click-to-pay handler</source>
+        <translation>Nemůžu spustit vDinar: obsluha click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -1319,8 +1319,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>123.456 VDN</source>
+        <translation>123.456 VDN</translation>
     </message>
     <message>
         <location line="+31"/>

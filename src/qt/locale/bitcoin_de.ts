@@ -248,7 +248,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vDINARS&lt;/b&gt;!</source>
         <translation>Warnung: Wenn Sie Ihre Brieftasche verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;alle Ihre vDinars verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-56"/>
-        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vdinars from being stolen by malware infecting your computer.</source>
+        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vDinars from being stolen by malware infecting your computer.</source>
         <translation>vDinar wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Bitte beachten Sie, dass die Verschlüsselung Ihrer Brieftasche nicht vollständig vor Diebstahl Ihrer vDinars durch Schadsoftware schützt, die Ihren Computer befällt.</translation>
     </message>
     <message>
@@ -1068,8 +1068,8 @@ Adresse: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start vdinar: click-to-pay handler</source>
-        <translation>&quot;vdinar: Klicken-zum-Bezahlen&quot;-Handler konnte nicht gestartet werden</translation>
+        <source>Cannot start vDinar: click-to-pay handler</source>
+        <translation>&quot;vDinar: Klicken-zum-Bezahlen&quot;-Handler konnte nicht gestartet werden</translation>
     </message>
 </context>
 <context>
@@ -1318,8 +1318,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>123.456 VDN</source>
+        <translation>123.456 VDN</translation>
     </message>
     <message>
         <location line="+31"/>

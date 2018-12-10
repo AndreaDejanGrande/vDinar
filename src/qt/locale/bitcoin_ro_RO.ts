@@ -103,7 +103,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified vDinar address</source>
-        <translation>Verifica mesajul pentru a te asigura ca a fost insemnat cu o adresa vdinar specifica</translation>
+        <translation>Verifica mesajul pentru a te asigura ca a fost insemnat cu o adresa[[:space:]]vDinar[[:space:]]specifica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -243,8 +243,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE LITECOIN ACUMULATĂ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vDINARS&lt;/b&gt;!</source>
+        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE vDINAR ACUMULATĂ&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -270,8 +270,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vdinars from being stolen by malware infecting your computer.</source>
-        <translation>vDinar se va închide acum pentru a termina procesul de criptare. Amintiți-vă că criptarea portofelului dumneavoastră nu poate proteja în totalitate vdinars dvs. de a fi furate de intentii rele.</translation>
+        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vDinars from being stolen by malware infecting your computer.</source>
+        <translation>vDinar se va închide acum pentru a termina procesul de criptare. Amintiți-vă că criptarea portofelului dumneavoastră nu poate proteja în totalitate vDinars dvs. de a fi furate de intentii rele.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -729,7 +729,7 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid vDinar address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă vdinar valabilă.</translation>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă[[:space:]]vDinar[[:space:]]valabilă.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -931,7 +931,7 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de vdinar.</translation>
+        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de vDinar.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -993,7 +993,7 @@ Address: %4
     <message>
         <location line="+29"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa vdinar pe care a-ti specificat-o este invalida</translation>
+        <translation>Adresa[[:space:]]vDinar[[:space:]]pe care a-ti specificat-o este invalida</translation>
     </message>
 </context>
 <context>
@@ -1060,7 +1060,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start vdinar: click-to-pay handler</source>
+        <source>Cannot start vDinar: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1256,7 +1256,7 @@ Address: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the vDinar RPC console.</source>
-        <translation>Bun venit la consola vdinar RPC</translation>
+        <translation>Bun venit la consola[[:space:]]vDinar[[:space:]]RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1310,8 +1310,8 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>123.456 VDN</source>
+        <translation>123.456 VDN</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1331,7 +1331,7 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Confirmaţi trimiterea de vdinar</translation>
+        <translation>Confirmaţi trimiterea de vDinar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1376,7 +1376,7 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Eroare: Tranyacţia a fost respinsă.  Acesta poate fi rezultatul cheltuirii prealabile a unei sume de vdinar din portofelul electronic, ca în cazul folosirii unei copii a fisierului wallet.dat, în care s-au efectuat tranzacţii neînregistrate în fisierul curent.</translation>
+        <translation>Eroare: Tranyacţia a fost respinsă.  Acesta poate fi rezultatul cheltuirii prealabile a unei sume de[[:space:]]vDinar[[:space:]]din portofelul electronic, ca în cazul folosirii unei copii a fisierului wallet.dat, în care s-au efectuat tranzacţii neînregistrate în fisierul curent.</translation>
     </message>
 </context>
 <context>
@@ -1775,7 +1775,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Monedele vdinar generate se pot cheltui dupa parcurgerea a 120 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
+        <translation>Monedele[[:space:]]vDinar[[:space:]]generate se pot cheltui dupa parcurgerea a 120 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2807,7 +2807,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vDinar Alert&quot; admin@foo.c
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart vDinar to complete</source>
-        <translation>Portofelul trebuie rescris: restarteaza aplicatia vdinar pentru a face asta.</translation>
+        <translation>Portofelul trebuie rescris: restarteaza aplicatia[[:space:]]vDinar[[:space:]]pentru a face asta.</translation>
     </message>
     <message>
         <location line="-95"/>

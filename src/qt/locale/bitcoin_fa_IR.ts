@@ -243,7 +243,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vDINARS&lt;/b&gt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -270,7 +270,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vdinars from being stolen by malware infecting your computer.</source>
+        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vDinars from being stolen by malware infecting your computer.</source>
         <translation>vDinar برای اتمام فرایند رمزگذاری بسته خواهد شد. به خاطر داشته باشید که رمزگذاری WALLET شما،  کامپیوتر شما را از آلودگی به بدافزارها مصون نمی دارد.</translation>
     </message>
     <message>
@@ -451,7 +451,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="-165"/>
         <location line="+530"/>
         <source>vDinar</source>
-        <translation>vdinar</translation>
+        <translation>vDinar</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -532,7 +532,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+47"/>
         <source>vDinar client</source>
-        <translation>مشتری vdinar</translation>
+        <translation>مشتری vDinar</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
@@ -731,7 +731,7 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid vDinar address.</source>
-        <translation>آدرس وارد شده &quot;%1&quot; یک آدرس صحیح برای vdinar نسشت</translation>
+        <translation>آدرس وارد شده &quot;%1&quot; یک آدرس صحیح برای[[:space:]]vDinar[[:space:]]نسشت</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1009,7 +1009,7 @@ Address: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the vDinar network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش داده شده ممکن است روزآمد نباشد. wallet شما به صورت خودکار بعد از برقراری اتصال با شبکه vdinar به روز می شود اما این فرایند هنوز تکمیل نشده است.</translation>
+        <translation>اطلاعات نمایش داده شده ممکن است روزآمد نباشد. wallet شما به صورت خودکار بعد از برقراری اتصال با شبکه[[:space:]]vDinar[[:space:]]به روز می شود اما این فرایند هنوز تکمیل نشده است.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1062,7 +1062,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start vdinar: click-to-pay handler</source>
+        <source>Cannot start vDinar: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1259,7 +1259,7 @@ Address: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the vDinar RPC console.</source>
-        <translation>به کنسول آر.پی.سی. LITECOIN خوش آمدید</translation>
+        <translation>به کنسول آر.پی.سی. vDINAR خوش آمدید</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1313,8 +1313,8 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>123.456 VDN</source>
+        <translation>123.456 VDN</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1443,7 +1443,7 @@ Address: %4
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a vDinar address (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation>یک آدرس vdinar وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
+        <translation>یک آدرس[[:space:]]vDinar[[:space:]]وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
 </context>
 <context>
@@ -1466,7 +1466,7 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation>یک آدرس vdinar وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
+        <translation>یک آدرس[[:space:]]vDinar[[:space:]]وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1539,7 +1539,7 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation>یک آدرس vdinar وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
+        <translation>یک آدرس[[:space:]]vDinar[[:space:]]وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1560,7 +1560,7 @@ Address: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
         <source>Enter a vDinar address (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation>یک آدرس vdinar وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
+        <translation>یک آدرس[[:space:]]vDinar[[:space:]]وارد کنید (مثال DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2182,7 +2182,7 @@ Address: %4
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>vDinar version</source>
-        <translation>نسخه vdinar</translation>
+        <translation>نسخه vDinar</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2192,7 +2192,7 @@ Address: %4
     <message>
         <location line="-29"/>
         <source>Send command to -server or vdinard</source>
-        <translation>ارسال دستور به سرور یا vdinared</translation>
+        <translation>ارسال دستور به سرور یا vDinared</translation>
     </message>
     <message>
         <location line="-23"/>

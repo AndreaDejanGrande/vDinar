@@ -248,8 +248,8 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Attenzione: se si cifra il portamonete e si perde la frase d&apos;ordine, &lt;b&gt;SI PERDERANNO TUTTI I PROPRI LITECOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vDINARS&lt;/b&gt;!</source>
+        <translation>Attenzione: se si cifra il portamonete e si perde la frase d&apos;ordine, &lt;b&gt;SI PERDERANNO TUTTI I PROPRI vDINAR&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,7 +275,7 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
     </message>
     <message>
         <location line="-56"/>
-        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vdinars from being stolen by malware infecting your computer.</source>
+        <source>vDinar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vDinars from being stolen by malware infecting your computer.</source>
         <translation>vDinar verrà ora chiuso per finire il processo di crittazione. Ricorda che criptare il tuo portamonete non può fornire una protezione totale contro furti causati da malware che dovessero infettare il tuo computer.</translation>
     </message>
     <message>
@@ -420,12 +420,12 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
     <message>
         <location line="-347"/>
         <source>Send coins to a vDinar address</source>
-        <translation>Invia monete ad un indirizzo vdinar</translation>
+        <translation>Invia monete ad un indirizzo vDinar</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for vDinar</source>
-        <translation>Modifica configurazione opzioni per vdinar</translation>
+        <translation>Modifica configurazione opzioni per vDinar</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -739,7 +739,7 @@ Indirizzo: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid vDinar address.</source>
-        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo vdinar valido.</translation>
+        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo[[:space:]]vDinar[[:space:]]valido.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1071,7 +1071,7 @@ Indirizzo: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start vdinar: click-to-pay handler</source>
+        <source>Cannot start vDinar: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1321,8 +1321,8 @@ Indirizzo: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123,456 BTC</translation>
+        <source>123.456 VDN</source>
+        <translation>123,456 VDN</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1342,7 +1342,7 @@ Indirizzo: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Conferma la spedizione di vdinar</translation>
+        <translation>Conferma la spedizione di vDinar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1387,7 +1387,7 @@ Indirizzo: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni vdinar nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i vdinar sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
+        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni[[:space:]]vDinar[[:space:]]nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i[[:space:]]vDinar[[:space:]]sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
     </message>
 </context>
 <context>
@@ -1598,7 +1598,7 @@ Indirizzo: %4
         <location line="-81"/>
         <location line="+81"/>
         <source>The entered address does not refer to a key.</source>
-        <translation>L&apos;indirizzo vdinar inserito non è associato a nessuna chiave.</translation>
+        <translation>L&apos;indirizzo[[:space:]]vDinar[[:space:]]inserito non è associato a nessuna chiave.</translation>
     </message>
     <message>
         <location line="-73"/>
@@ -1786,7 +1786,7 @@ Indirizzo: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Bisogna attendere 120 blocchi prima di spendere I vdinar generati. Quando è stato generato questo blocco, è stato trasmesso alla rete per aggiungerlo alla catena di blocchi. Se non riesce a entrare nella catena, verrà modificato in &quot;non accettato&quot; e non sarà spendibile. Questo può accadere a volte, se un altro nodo genera un blocco entro pochi secondi del tuo.</translation>
+        <translation>Bisogna attendere 120 blocchi prima di spendere I[[:space:]]vDinar[[:space:]]generati. Quando è stato generato questo blocco, è stato trasmesso alla rete per aggiungerlo alla catena di blocchi. Se non riesce a entrare nella catena, verrà modificato in &quot;non accettato&quot; e non sarà spendibile. Questo può accadere a volte, se un altro nodo genera un blocco entro pochi secondi del tuo.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2340,7 +2340,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vDinar Alert&quot; admin@foo.c
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni vdinar nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i vdinar sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
+        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni[[:space:]]vDinar[[:space:]]nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i[[:space:]]vDinar[[:space:]]sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2500,7 +2500,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vDinar Alert&quot; admin@foo.c
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>Scrittura nel database dei vdinar fallita</translation>
+        <translation>Scrittura nel database dei[[:space:]]vDinar[[:space:]]fallita</translation>
     </message>
     <message>
         <location line="+1"/>
