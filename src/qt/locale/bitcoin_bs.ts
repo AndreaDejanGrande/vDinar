@@ -123,7 +123,7 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your vDinar addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su tvoje vDinar adrese za slanje. Uvijek provijeri količinu i primajuću adresu prije slanja novca.</translation>
+        <translation>Ovo su tvoje vDinar adrese za slanje. Uvijek provjeri količinu i primajuću adresu prije slanja novca.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -450,7 +450,7 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message>
         <location line="-4"/>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Provijeri poruku...</translation>
+        <translation>&amp;Provjeri poruku...</translation>
     </message>
     <message>
         <location line="-165"/>
@@ -506,7 +506,7 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified vDinar addresses</source>
-        <translation>Provijeri poruke kako bi saznao/la jesu li potpisane specifičnom vDinar adresom</translation>
+        <translation>Provjeri poruke kako bi saznao/la jesu li potpisane specifičnom vDinar adresom</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -1393,63 +1393,63 @@ Adresa: %4
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="+14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Obrazac</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>A&amp;mount:</source>
-        <translation type="unfinished"/>
+        <translation>K&amp;oličina</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Pay &amp;To:</source>
-        <translation type="unfinished"/>
+        <translation>Uplata &amp;za:</translation>
     </message>
     <message>
         <location line="+34"/>
         <source>The address to send the payment to (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation type="unfinished"/>
+        <translation>Adresa kojoj slati novac (npr. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
     <message>
         <location line="+60"/>
         <location filename="../sendcoinsentry.cpp" line="+26"/>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation type="unfinished"/>
+        <translation>Napiši naziv za ovu adresu kako bi je dodao/la u adresar</translation>
     </message>
     <message>
         <location line="-78"/>
         <source>&amp;Label:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Naziv:</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>Choose address from address book</source>
-        <translation type="unfinished"/>
+        <translation>Izaberi adresu iz adresara</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Alt+A</source>
-        <translation type="unfinished"/>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Paste address from clipboard</source>
-        <translation type="unfinished"/>
+        <translation>Zalijepi adresu iz međuspremnika</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Alt+P</source>
-        <translation type="unfinished"/>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Remove this recipient</source>
-        <translation type="unfinished"/>
+        <translation>Ukloni ovaj primalac</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a vDinar address (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation type="unfinished"/>
+        <translation>Napiši vDinar adresu (npr. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
 </context>
 <context>
@@ -1457,132 +1457,132 @@ Adresa: %4
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation type="unfinished"/>
+        <translation>Potpisi - potpiši / provjeri poruku</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Sign Message</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Potpiši poruku</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished"/>
+        <translation>Možeš potpisati poruku tvojom adresom kako bi dokazao/la vlasništvo. Budi oprezan/na da ne potpišeš ništa nejasno, jer bi pokušaji krađe identiteta mogli iskoristiti te poruke. Samo potpiši mnogo detaljne rečenice sa kojima se potpuno slažeš.</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation type="unfinished"/>
+        <translation>Adresa kojom potpisati poruku (npr. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
     <message>
         <location line="+10"/>
         <location line="+213"/>
         <source>Choose an address from the address book</source>
-        <translation type="unfinished"/>
+        <translation>Izaberi adresu iz adresara</translation>
     </message>
     <message>
         <location line="-203"/>
         <location line="+213"/>
         <source>Alt+A</source>
-        <translation type="unfinished"/>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <location line="-203"/>
         <source>Paste address from clipboard</source>
-        <translation type="unfinished"/>
+        <translation>Zalijepi adresu iz međuspremnika</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Alt+P</source>
-        <translation type="unfinished"/>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Enter the message you want to sign here</source>
-        <translation type="unfinished"/>
+        <translation>Napiši poruku koju hoćeš potpisati</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Signature</source>
-        <translation type="unfinished"/>
+        <translation>Potpis</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Copy the current signature to the system clipboard</source>
-        <translation type="unfinished"/>
+        <translation>Kopiraj trenutačni potpis u međuspremnik</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this vDinar address</source>
-        <translation type="unfinished"/>
+        <translation>Potpiši poruku kako bi dokazao/la vlasništvo ove vDinar adrese</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation type="unfinished"/>
+        <translation>Potpiši &amp;poruku</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Reset all sign message fields</source>
-        <translation type="unfinished"/>
+        <translation>Vrati polja o potpisivanju poruke na zadane vrijednosti</translation>
     </message>
     <message>
         <location line="+3"/>
         <location line="+146"/>
         <source>Clear &amp;All</source>
-        <translation type="unfinished"/>
+        <translation>Izbriši &amp;sve</translation>
     </message>
     <message>
         <location line="-87"/>
         <source>&amp;Verify Message</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Provjeri poruku</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation type="unfinished"/>
+        <translation>Napiši potpisujuću adresu, poruku (budi siguran/na da su svi novi redovi, razmaci i umetci uspješno kopirani) i potpis kako bi provjerio/la poruku. Budi oprezan/na da ne čitaš više nego potpisano, izbjegavajući eventualnu posrednikovu prevaru.</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation type="unfinished"/>
+        <translation>Adresa kojom je poruka potpisana (npr. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified vDinar address</source>
-        <translation type="unfinished"/>
+        <translation>Provjeri poruku kako bih osigurao/la da je ona potpisana specifičnom vDinar adresom</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Verify &amp;Message</source>
-        <translation type="unfinished"/>
+        <translation>Provjeri &amp;poruku</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Reset all verify message fields</source>
-        <translation type="unfinished"/>
+        <translation>Vrati sva polja o provijeri poruke na zadane vrijednosti</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
         <source>Enter a vDinar address (e.g. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</source>
-        <translation type="unfinished"/>
+        <translation>Napiši vDinar adresu (npr. DG1KpSsSXd3uitgwHaA1i6T1Bj1hWEwAxB)</translation>
     </message>
     <message>
         <location line="-2"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation type="unfinished"/>
+        <translation>Klikni &quot;Potpiši poruku&quot; kako bih dobio/la potpis</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Enter vDinar signature</source>
-        <translation type="unfinished"/>
+        <translation>Napiši vDinar potpis</translation>
     </message>
     <message>
         <location line="+82"/>
         <location line="+81"/>
         <source>The entered address is invalid.</source>
-        <translation type="unfinished"/>
+        <translation>Napisana adresa nije važeća.</translation>
     </message>
     <message>
         <location line="-81"/>
@@ -1590,59 +1590,59 @@ Adresa: %4
         <location line="+73"/>
         <location line="+8"/>
         <source>Please check the address and try again.</source>
-        <translation type="unfinished"/>
+        <translation>Provjeri adresu i pokušaj ponovo.</translation>
     </message>
     <message>
         <location line="-81"/>
         <location line="+81"/>
         <source>The entered address does not refer to a key.</source>
-        <translation type="unfinished"/>
+        <translation>Napisana adresa nije povezana sa nijednim ključem.</translation>
     </message>
     <message>
         <location line="-73"/>
         <source>Wallet unlock was cancelled.</source>
-        <translation type="unfinished"/>
+        <translation>Otključavanje novčanika je poništen.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Private key for the entered address is not available.</source>
-        <translation type="unfinished"/>
+        <translation>Privatni ključ za napisanu adresu nije dostupna.</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Message signing failed.</source>
-        <translation type="unfinished"/>
+        <translation>Potpisivanje poruke nije uspjelo.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message signed.</source>
-        <translation type="unfinished"/>
+        <translation>Poruka potpisana.</translation>
     </message>
     <message>
         <location line="+59"/>
         <source>The signature could not be decoded.</source>
-        <translation type="unfinished"/>
+        <translation>Potpis nije se mogao dešifrirati.</translation>
     </message>
     <message>
         <location line="+0"/>
         <location line="+13"/>
         <source>Please check the signature and try again.</source>
-        <translation type="unfinished"/>
+        <translation>Provjeri potpis i pokušaj ponovo.</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The signature did not match the message digest.</source>
-        <translation type="unfinished"/>
+        <translation>Potpis nije usklađen sa ključem sažetka poruke.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Message verification failed.</source>
-        <translation type="unfinished"/>
+        <translation>Provijera poruke nije uspjela.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message verified.</source>
-        <translation type="unfinished"/>
+        <translation>Poruka je provjerena.</translation>
     </message>
 </context>
 <context>
@@ -1650,12 +1650,12 @@ Adresa: %4
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
         <source>The vDinar developers</source>
-        <translation type="unfinished"/>
+        <translation>Razvijači virtualnog Dinara</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>[testnet]</source>
-        <translation type="unfinished"/>
+        <translation>[eksperimentalna mreža]</translation>
     </message>
 </context>
 <context>
@@ -1663,71 +1663,71 @@ Adresa: %4
     <message>
         <location filename="../transactiondesc.cpp" line="+20"/>
         <source>Open until %1</source>
-        <translation type="unfinished"/>
+        <translation>Otvoreno do %1</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>%1/offline</source>
-        <translation type="unfinished"/>
+        <translation>%1/nepovezano</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/unconfirmed</source>
-        <translation type="unfinished"/>
+        <translation>%1/nepotvrđeno</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 confirmations</source>
-        <translation type="unfinished"/>
+        <translation>%1 potvrde</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Status</source>
-        <translation type="unfinished"/>
+        <translation>Stanje</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation>, prenošeno preko %n čvora/ova</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation>Datum</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Source</source>
-        <translation type="unfinished"/>
+        <translation>Izvor</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Generated</source>
-        <translation type="unfinished"/>
+        <translation>Proizvedeno</translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+17"/>
         <source>From</source>
-        <translation type="unfinished"/>
+        <translation>Od</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+22"/>
         <location line="+58"/>
         <source>To</source>
-        <translation type="unfinished"/>
+        <translation>Za</translation>
     </message>
     <message>
         <location line="-77"/>
         <location line="+2"/>
         <source>own address</source>
-        <translation type="unfinished"/>
+        <translation>vlastita adresa</translation>
     </message>
     <message>
         <location line="-2"/>
         <source>label</source>
-        <translation type="unfinished"/>
+        <translation>naziv</translation>
     </message>
     <message>
         <location line="+37"/>
@@ -1736,17 +1736,17 @@ Adresa: %4
         <location line="+17"/>
         <location line="+30"/>
         <source>Credit</source>
-        <translation type="unfinished"/>
+        <translation>Kredit</translation>
     </message>
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation>sazrijevat će za %n blok(ova)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>not accepted</source>
-        <translation type="unfinished"/>
+        <translation>neprihvaćeno</translation>
     </message>
     <message>
         <location line="+44"/>
@@ -1754,82 +1754,82 @@ Adresa: %4
         <location line="+15"/>
         <location line="+30"/>
         <source>Debit</source>
-        <translation type="unfinished"/>
+        <translation>Dug</translation>
     </message>
     <message>
         <location line="-39"/>
         <source>Transaction fee</source>
-        <translation type="unfinished"/>
+        <translation>Transakcijski porez</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Net amount</source>
-        <translation type="unfinished"/>
+        <translation>Neto količina</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Message</source>
-        <translation type="unfinished"/>
+        <translation>Poruka</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Comment</source>
-        <translation type="unfinished"/>
+        <translation>Komentar</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Transaction ID</source>
-        <translation type="unfinished"/>
+        <translation>Transakcijski broj</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished"/>
+        <translation>Proizvedeni novčići moraju sazrijevati 120 blokova kako bi se mogli potrošiti. Kada je ovaj blok bio proizveden, ono je prenošeno mreži kako bi se dodao lancu. Ako ono ne bude uspješno dodato bit će označen kao &quot;neprihvaćen&quot; i neće biti potrošiv. Ovo se može dogoditi ako je netko proizveo bloka nekoliko sekundi prije.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Debug information</source>
-        <translation type="unfinished"/>
+        <translation>Izvještajni podaci</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Transaction</source>
-        <translation type="unfinished"/>
+        <translation>Transakcija</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Inputs</source>
-        <translation type="unfinished"/>
+        <translation>Izvori</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Amount</source>
-        <translation type="unfinished"/>
+        <translation>Količina</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>true</source>
-        <translation type="unfinished"/>
+        <translation>istinito</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>false</source>
-        <translation type="unfinished"/>
+        <translation>neistinito</translation>
     </message>
     <message>
         <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
-        <translation type="unfinished"/>
+        <translation>, još nije uspješno prenošeno</translation>
     </message>
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation>Otvoreno za još %n bloka/ova</translation>
     </message>
     <message>
         <location line="+70"/>
         <source>unknown</source>
-        <translation type="unfinished"/>
+        <translation>nepoznato</translation>
     </message>
 </context>
 <context>
@@ -1837,12 +1837,12 @@ Adresa: %4
     <message>
         <location filename="../forms/transactiondescdialog.ui" line="+14"/>
         <source>Transaction details</source>
-        <translation type="unfinished"/>
+        <translation>Transakcijski detalji</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation type="unfinished"/>
+        <translation>Ova ploča sadrži detaljni opis transakcije</translation>
     </message>
 </context>
 <context>
@@ -1850,117 +1850,117 @@ Adresa: %4
     <message>
         <location filename="../transactiontablemodel.cpp" line="+225"/>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation>Datum</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Type</source>
-        <translation type="unfinished"/>
+        <translation>Vrsta</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation type="unfinished"/>
+        <translation>Adresa</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Amount</source>
-        <translation type="unfinished"/>
+        <translation>Količina</translation>
     </message>
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation>Otvoreno za još %n bloka/ova</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Open until %1</source>
-        <translation type="unfinished"/>
+        <translation>Otvoreno do %1</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Offline (%1 confirmations)</source>
-        <translation type="unfinished"/>
+        <translation>Nepovezano (%1 potvrda/e)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Unconfirmed (%1 of %2 confirmations)</source>
-        <translation type="unfinished"/>
+        <translation>Nepotvrđeno (%1 od %2 potvrda/e)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Confirmed (%1 confirmations)</source>
-        <translation type="unfinished"/>
+        <translation>Potvrđeno (%1 potvrda/e)</translation>
     </message>
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blok(ova)</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation type="unfinished"/>
+        <translation>Nijedan drugi čvor nije dobio ovaj blok, ono će dakle vjerovatno ostati neprihvaćeno!</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Generated but not accepted</source>
-        <translation type="unfinished"/>
+        <translation>Proizvedeno ali neprihvaćeno</translation>
     </message>
     <message>
         <location line="+43"/>
         <source>Received with</source>
-        <translation type="unfinished"/>
+        <translation>Primljeno sa</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Received from</source>
-        <translation type="unfinished"/>
+        <translation>Primljeno od</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sent to</source>
-        <translation type="unfinished"/>
+        <translation>Poslano za</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Payment to yourself</source>
-        <translation type="unfinished"/>
+        <translation>Uplata samom sebi</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Mined</source>
-        <translation type="unfinished"/>
+        <translation>Kopano</translation>
     </message>
     <message>
         <location line="+38"/>
         <source>(n/a)</source>
-        <translation type="unfinished"/>
+        <translation>b.p.</translation>
     </message>
     <message>
         <location line="+199"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation type="unfinished"/>
+        <translation>Stanje transakcije. Pređi mišem ovim poljem kako bi pogledao/la broj potvrda.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Date and time that the transaction was received.</source>
-        <translation type="unfinished"/>
+        <translation>Datum i sati kada je ova transakcija primljena.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Type of transaction.</source>
-        <translation type="unfinished"/>
+        <translation>Vrsta transakcije.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation type="unfinished"/>
+        <translation>Adresa prijemnika ove transakcije.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Amount removed from or added to balance.</source>
-        <translation type="unfinished"/>
+        <translation>Količina oduzeta iz kredita ili njemu dodana.</translation>
     </message>
 </context>
 <context>
@@ -1969,167 +1969,167 @@ Adresa: %4
         <location filename="../transactionview.cpp" line="+52"/>
         <location line="+16"/>
         <source>All</source>
-        <translation type="unfinished"/>
+        <translation>Sve</translation>
     </message>
     <message>
         <location line="-15"/>
         <source>Today</source>
-        <translation type="unfinished"/>
+        <translation>Danas</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This week</source>
-        <translation type="unfinished"/>
+        <translation>Ove sedmice</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This month</source>
-        <translation type="unfinished"/>
+        <translation>Ovog mjeseca</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Last month</source>
-        <translation type="unfinished"/>
+        <translation>U zadnjem mjesecu</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This year</source>
-        <translation type="unfinished"/>
+        <translation>Ove godine</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Range...</source>
-        <translation type="unfinished"/>
+        <translation>Domet...</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Received with</source>
-        <translation type="unfinished"/>
+        <translation>Primljeno sa</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Sent to</source>
-        <translation type="unfinished"/>
+        <translation>Poslano za</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>To yourself</source>
-        <translation type="unfinished"/>
+        <translation>Samom sebi</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Mined</source>
-        <translation type="unfinished"/>
+        <translation>Kopano</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Other</source>
-        <translation type="unfinished"/>
+        <translation>Ostalo</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Enter address or label to search</source>
-        <translation type="unfinished"/>
+        <translation>Napiši adresu ili naziv za potragu</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Min amount</source>
-        <translation type="unfinished"/>
+        <translation>Najmanje</translation>
     </message>
     <message>
         <location line="+34"/>
         <source>Copy address</source>
-        <translation type="unfinished"/>
+        <translation>Kopiraj adresu</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy label</source>
-        <translation type="unfinished"/>
+        <translation>Kopiraj naziv</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
-        <translation type="unfinished"/>
+        <translation>Kopiraj količinu</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy transaction ID</source>
-        <translation type="unfinished"/>
+        <translation>Kopiraj transakcijski broj</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Edit label</source>
-        <translation type="unfinished"/>
+        <translation>Uredi naziv</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show transaction details</source>
-        <translation type="unfinished"/>
+        <translation>Pokaži detalje o transakciji</translation>
     </message>
     <message>
         <location line="+139"/>
         <source>Export Transaction Data</source>
-        <translation type="unfinished"/>
+        <translation>Izvedi transakcijske podatke</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation type="unfinished"/>
+        <translation>Datoteka rastavljena zarezima (*.csv)</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Confirmed</source>
-        <translation type="unfinished"/>
+        <translation>Potvrđeno</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation>Datum</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Type</source>
-        <translation type="unfinished"/>
+        <translation>Vrsta</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Label</source>
-        <translation type="unfinished"/>
+        <translation>Naziv</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Address</source>
-        <translation type="unfinished"/>
+        <translation>Adresa</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Amount</source>
-        <translation type="unfinished"/>
+        <translation>Količina</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>ID</source>
-        <translation type="unfinished"/>
+        <translation>Broj</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error exporting</source>
-        <translation type="unfinished"/>
+        <translation>Greška u izvozu</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Could not write to file %1.</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati datoteku %1.</translation>
     </message>
     <message>
         <location line="+100"/>
         <source>Range:</source>
-        <translation type="unfinished"/>
+        <translation>Domet:</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>to</source>
-        <translation type="unfinished"/>
+        <translation>za</translation>
     </message>
 </context>
 <context>
@@ -2137,7 +2137,7 @@ Adresa: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation type="unfinished"/>
+        <translation>Pošalji novac</translation>
     </message>
 </context>
 <context>
@@ -2145,42 +2145,42 @@ Adresa: %4
     <message>
         <location filename="../walletview.cpp" line="+42"/>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Izvedi</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished"/>
+        <translation>Izvedi podatke iz trenutačne ploče u datoteku</translation>
     </message>
     <message>
         <location line="+193"/>
         <source>Backup Wallet</source>
-        <translation type="unfinished"/>
+        <translation>Napravi rezervu novčanika</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished"/>
+        <translation>Podaci novčanika (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation type="unfinished"/>
+        <translation>Pravljenje rezerve nije uspio</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation type="unfinished"/>
+        <translation>Dogodila se greška sa spremanjem podataka novčanika u novu lokaciju.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Backup Successful</source>
-        <translation type="unfinished"/>
+        <translation>Pravljenje rezerve je uspio</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The wallet data was successfully saved to the new location.</source>
-        <translation type="unfinished"/>
+        <translation>Podaci novčanika su uspješno spremljeni u novu lokaciju.</translation>
     </message>
 </context>
 <context>
@@ -2188,112 +2188,112 @@ Adresa: %4
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>vDinar version</source>
-        <translation type="unfinished"/>
+        <translation>Verzija vDinara</translation>
     </message>
     <message>
         <location line="+102"/>
         <source>Usage:</source>
-        <translation type="unfinished"/>
+        <translation>Korištenje:</translation>
     </message>
     <message>
         <location line="-29"/>
         <source>Send command to -server or vdinard</source>
-        <translation type="unfinished"/>
+        <translation>Napiši naredbe na -server ili vdinard</translation>
     </message>
     <message>
         <location line="-23"/>
         <source>List commands</source>
-        <translation type="unfinished"/>
+        <translation>Pokaži popis naredba</translation>
     </message>
     <message>
         <location line="-12"/>
         <source>Get help for a command</source>
-        <translation type="unfinished"/>
+        <translation>Dobij pomoć za specifičnu naredbu</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>Options:</source>
-        <translation type="unfinished"/>
+        <translation>Opcije:</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>Specify configuration file (default: vdinar.conf)</source>
-        <translation type="unfinished"/>
+        <translation>Odredi konfiguracijsku datoteku (zadana: vdinar.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Specify pid file (default: vdinard.pid)</source>
-        <translation type="unfinished"/>
+        <translation>Odredi pid datoteku (zadana: vdinard.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Specify data directory</source>
-        <translation type="unfinished"/>
+        <translation>Odredi direktorijum podataka</translation>
     </message>
     <message>
         <location line="-9"/>
         <source>Set database cache size in megabytes (default: 25)</source>
-        <translation type="unfinished"/>
+        <translation>Odredi veličinu predmemorijske baze podataka u MB (zadana: 25)</translation>
     </message>
     <message>
         <location line="-28"/>
         <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation type="unfinished"/>
+        <translation>Slušaj za povezivanja na &lt;mrežni priključak&gt; (zadani: 9333; u eksperimentalnoj mreži: 19333)</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation type="unfinished"/>
+        <translation>Čuvaj najviše toliko povezanih čvorova (zadana vrijednost: 125)</translation>
     </message>
     <message>
         <location line="-48"/>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation type="unfinished"/>
+        <translation>Poveži se na glavni čvor za dobivanje novih neglavnih, onda se od prvog iskopčaj</translation>
     </message>
     <message>
         <location line="+82"/>
         <source>Specify your own public address</source>
-        <translation type="unfinished"/>
+        <translation>Odredi svoju javnu adresu</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation type="unfinished"/>
+        <translation>Granica za iskopčavanje nefunkcionalnih čvorova (zadana vrijednost: 100)</translation>
     </message>
     <message>
         <location line="-134"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation type="unfinished"/>
+        <translation>Broj sekundi razmaka za novo povezivanje nefunkcionalnih čvorova (zadani: 86400)</translation>
     </message>
     <message>
         <location line="-29"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation type="unfinished"/>
+        <translation>Dogodila se greška tokom određivanja DPP mrežnog priključka %u za slušanje na IPv4: %s</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation type="unfinished"/>
+        <translation>Slušaj za JSON-DPP povezivanja na &lt;mrežni priključak&gt; (zadani: 9332; u eksperimentalnoj mreži: 19332)</translation>
     </message>
     <message>
         <location line="+37"/>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation type="unfinished"/>
+        <translation>Prihvaćaj naredbe za komandnu liniju i JSON-DPP naredbe</translation>
     </message>
     <message>
         <location line="+76"/>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation type="unfinished"/>
+        <translation>Pokreni u pozadini kao uslugu i prihvaćaj naredbe</translation>
     </message>
     <message>
         <location line="+37"/>
         <source>Use the test network</source>
-        <translation type="unfinished"/>
+        <translation>Koristi eksperimentalnu mrežu</translation>
     </message>
     <message>
         <location line="-112"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation type="unfinished"/>
+        <translation>Prihvaćaj vanjska povezivanja (zadana vrijednost: 1 – osim naredbom -proxy ili -connect)</translation>
     </message>
     <message>
         <location line="-80"/>
@@ -2308,107 +2308,117 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;vDinar Alert&quot; admin@foo.com
 </source>
-        <translation type="unfinished"/>
+        <translation>%s, moraš napisati lozinku (rpcpassword) u konfiguracijskoj datoteci:
+%s
+Preporučuje se da koristiš sljedeću lozinku slučajnih brojki i slova:
+rpcuser=vdinarrpc
+rpcpassword=%s
+(ne moraš zapamtiti ovu lozinku).
+Vrijednosti rpcuser i rpcpassword MORAJU biti različite.
+Ako datoteka ne postoji, napravi je sa dozvolama za čitanje samo za vlasnika.
+Također se preporučuje odrediti vrijednost alertnotify kako bi bio/la obavješten/a o problemima;
+na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@adresa.com
+</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation type="unfinished"/>
+        <translation>Dogodila se greška tokom određivanja DPP mrežnog priključka %u za slušanje na IPv6, vraćam se na IPv4: %s</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished"/>
+        <translation>Povezuj se sa ovom adresom i uvijek slušaj za povezivanja na nju. Za IPv6 koristi notaciju [adresa]:broj-priključka</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. vDinar is probably already running.</source>
-        <translation type="unfinished"/>
+        <translation>Nemoguće pristupit direktorijumu podataka %s. vDinar je vjerovatno već pokrenut.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"/>
+        <translation>Greška: transakcija je odbačena! Ovo bi se moglo dogoditi ako je dio novca u novčaniku već potrošen, na primjer ako postoji druga kopija datoteke wallet.dat i novac je djelimično potrošen u kopiji, ali nije ovdje označen kao potrošen.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation type="unfinished"/>
+        <translation>Greška: ova transakcija zahtjeva transakcijski porez od najmanje %s zbog njene količine novca, složenosti ili zbog korištenja nedavno primljenih sredstva!</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"/>
+        <translation>Izvrši naredbu kada je relevantno upozorenje primljeno (%s u Cmd.exe je zamjenjen samom porukom)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation type="unfinished"/>
+        <translation>Izvrši naredbu kada je transakcija u novčaniku promjenjena (%s u Cmd.exe je zamjenjen brojem transakcije)</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
-        <translation type="unfinished"/>
+        <translation>Postavi najveću veličinu za transakcije velikog prioriteta ili niski porez u bajtovima (zadana: 27000)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation type="unfinished"/>
+        <translation>Ovo je eksperimentalna verzija: koristi je na vlastitu odgovornost i nemoj je koristiti za rudarenje ili pružanje usluga</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation type="unfinished"/>
+        <translation>Upozorenje: -paytxfee ima veoma visoku vrijednost! Ovo je porez koji ćeš platiti kada napraviš transakciju.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation type="unfinished"/>
+        <translation>Upozorenje: pokazane transakcije možda nisu istinite! Vjerovatno novčanik mora biti ažuriran, ili bi drugi povezani čvorovi trebali.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong vDinar will not work properly.</source>
-        <translation type="unfinished"/>
+        <translation>Upozorenje: pogledaj jesu li tačni podaci o datumu i vremenu u tvom računalu! Ako je tvoj sat pogrešno postavljen vDinar neće raditi kako treba.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation type="unfinished"/>
+        <translation>Upozorenje: greška u čitanju datoteke wallet.dat! Svi su ključevi uspješno učitani, ali su možda podaci transakcija ili podaci adresara netačni ili neprisutni.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation type="unfinished"/>
+        <translation>Upozorenje: pokvarena datoteka wallet.dat, ali su podaci spašeni! Original datoteke je sačuvan kao wallet.{datum}.bak u %s; ako su kredit ili transakcije netačne potrebno je koristiti rezervu novčanika.</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation type="unfinished"/>
+        <translation>Pokušaj vraćanja privatnih ključeva iz pokvarene datoteke wallet.dat</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Block creation options:</source>
-        <translation type="unfinished"/>
+        <translation>Opcije stvaranja bloka:</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Connect only to the specified node(s)</source>
-        <translation type="unfinished"/>
+        <translation>Povezuj samo na određeni/e čvor(ove)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Corrupted block database detected</source>
-        <translation type="unfinished"/>
+        <translation>Pronađena pokvarena baza podataka blokova</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation type="unfinished"/>
+        <translation>Saznaj vlastitu IP adresu (zadana: 1 – sa uključenim slušanjem i kad nema naredbe -externalip)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Do you want to rebuild the block database now?</source>
-        <translation type="unfinished"/>
+        <translation>Želiš li izgraditi ponovo bazu podataka blokova?</translation>
     </message>
     <message>
         <location line="+2"/>
