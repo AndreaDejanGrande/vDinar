@@ -2548,7 +2548,7 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
     <message>
         <location line="+26"/>
         <source>Verifying blocks...</source>
-        <translation>Provjeravam blokobe...</translation>
+        <translation>Provjeravam blokove...</translation>
     </message>
     <message>
         <location line="+1"/>
