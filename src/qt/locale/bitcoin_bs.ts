@@ -1051,12 +1051,12 @@ Adresa: %4
     <message>
         <location line="-101"/>
         <source>Your current balance</source>
-        <translation>Tvoj trenutačni kredit</transaction>
+        <translation>Tvoj trenutačni kredit</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Ukupni broj još nepotvrđenih transakcija, koje dakle još nisu uračunate u trenutačni kredit</transaction>
+        <translation>Ukupni broj još nepotvrđenih transakcija, koje dakle još nisu uračunate u trenutačni kredit</translation>
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="+116"/>
@@ -1070,7 +1070,7 @@ Adresa: %4
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start vdinar: click-to-pay handler</source>
-        <translation>Nemoguće pokrenuti vDinar: upravljač klikni-za-uplatu</translation>
+        <translation>Kretanje vDinar upravljača klikni-za-uplatu nije bilo moguće</translation>
     </message>
 </context>
 <context>
@@ -2333,7 +2333,7 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. vDinar is probably already running.</source>
-        <translation>Nemoguće pristupit direktorijumu podataka %s. vDinar je vjerovatno već pokrenut.</translation>
+        <translation>Pristup direktorijumu podataka %s nije bilo moguće. vDinar je vjerovatno već pokrenut.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2423,437 +2423,437 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
     <message>
         <location line="+2"/>
         <source>Error initializing block database</source>
-        <translation type="unfinished"/>
+        <translation>Greška u pokretanju baze podataka blokova</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error initializing wallet database environment %s!</source>
-        <translation type="unfinished"/>
+        <translation>Greška u pokretanju okoline %s baze podataka!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading block database</source>
-        <translation type="unfinished"/>
+        <translation>Greška u učitavanju baze podataka blokova</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error opening block database</source>
-        <translation type="unfinished"/>
+        <translation>Greška u otvaranju baze podataka blokova</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Error: Disk space is low!</source>
-        <translation type="unfinished"/>
+        <translation>Greška: premalo mjesta na disku!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation type="unfinished"/>
+        <translation>Greška: novčanik je zaključan, nemoguće napraviti transakciju!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: system error: </source>
-        <translation type="unfinished"/>
+        <translation>Sistemska greška:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće uključiti slušanje na nijedan mrežni priključak. Napiši -listen=0 ako je namjerno.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to read block info</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće čitati informacije o bloku</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to read block</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće čitati bloka</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to sync block index</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće sinkronizirati indeks blokova</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block index</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati indeks blokova</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block info</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati informacije bloka</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati bloka</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write file info</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati informacije datoteke</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati bazu podataka novčića</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write transaction index</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati indeks transakcija</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write undo data</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće prebrisati &quot;undo&quot; podatke</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation type="unfinished"/>
+        <translation>Nađi čvorove koji koriste DNS pretraživanje (zadana vrijednost: 1 – osim naredbom -connect)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Stvaraj novčiće (zadana vrijednost: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation type="unfinished"/>
+        <translation>Koliko blokova pretražiti nakon pokretanja (zadana vrijednost: 288; napiši 0 za uklanjanje granice)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>How thorough the block verification is (0-4, default: 3)</source>
-        <translation type="unfinished"/>
+        <translation>Koliko duboko provjeriti blokove (od 0 do 4; zadana vrijednost: 3)</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Not enough file descriptors available.</source>
-        <translation type="unfinished"/>
+        <translation>Nema dovoljno datotečnih opisivača.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation type="unfinished"/>
+        <translation>Obnovi indeks lanca blokova iz trenutačnih blk000??.dat datoteka</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Set the number of threads to service RPC calls (default: 4)</source>
-        <translation type="unfinished"/>
+        <translation>Postavi broj rasporeda na usluzi DPP poziva (zadani: 4)</translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Verifying blocks...</source>
-        <translation type="unfinished"/>
+        <translation>Provjeravam blokobe...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Verifying wallet...</source>
-        <translation type="unfinished"/>
+        <translation>Povjeravam novčanik...</translation>
     </message>
     <message>
         <location line="-69"/>
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation type="unfinished"/>
+        <translation>Uvedi blokove iz vanjske blk000??.dat datoteke</translation>
     </message>
     <message>
         <location line="-76"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Postavi broj rasporeda provijere izvornika (najviše 16; napiši 0 za automatsko postavljanje – zadana vrijednost)</translation>
     </message>
     <message>
         <location line="+77"/>
         <source>Information</source>
-        <translation type="unfinished"/>
+        <translation>Informacije</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nevažeća -tor adresa: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nevažeća količina za -minrelaytxfee=&lt;količina&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nevažeća količina za -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Maintain a full transaction index (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Čuvaj puni indeks transakcija (zadana postavka: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation type="unfinished"/>
+        <translation>Maksimalna veličina prijemnog skladišta po vezi puta 1000 bajtova (zadana: 5000 – tj. 5 mil. bajtova)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation type="unfinished"/>
+        <translation>Maksimalna veličina izlaznog skladišta po vezi puta 1000 bajtova (zadana: 1000 – tj. 1 mil. bajtova)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation type="unfinished"/>
+        <translation>Prihvaćaj samo lance blokova koje su u skladu sa izvornim tačkama kontrola (zadana postavka: 1)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation type="unfinished"/>
+        <translation>Samo se povezuj na čvorove u mreži &lt;net&gt; (IPv4, IPv6 ili Tor)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
-        <translation type="unfinished"/>
+        <translation>Izvedi dodatna izvještaja. Uključuje sve ostale -debug* opcije</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Output extra network debugging information</source>
-        <translation type="unfinished"/>
+        <translation>Izvedi dodatna izvještaja o mreži</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Prepend debug output with timestamp</source>
-        <translation type="unfinished"/>
+        <translation>Dodaj datum na početak izvedenog izvještaja</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>SSL options: (see the vDinar Wiki for SSL setup instructions)</source>
-        <translation type="unfinished"/>
+        <translation>SSL opcije: (pogledaj stranicu vDinara za instrukcije o postavljanju SSL-a)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation type="unfinished"/>
+        <translation>Izaberi verziju SOCKS zastupnika za korištenje (4 ili 5, zadana: 5)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation type="unfinished"/>
+        <translation>Pošalji traku/izvještaj konzoli umjesto datoteci debug.log</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
-        <translation type="unfinished"/>
+        <translation>Pošalji traku/izvještaj izvještajnom programu</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation type="unfinished"/>
+        <translation>Postavi maksimalnu veličinu blokova u bajtovima (zadana: 250000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set minimum block size in bytes (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Postavi minimalnu veličinu blokova u bajtovima (zadana: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation type="unfinished"/>
+        <translation>Smanji veličinu datoteke debug.log nakon pokretanja klijenta (zadana postavka: 1; osim naredbom -debug)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Signing transaction failed</source>
-        <translation type="unfinished"/>
+        <translation>Potpisivanje transakcije nije uspjelo</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation type="unfinished"/>
+        <translation>Odredi maksimalno trajanje pokušaja povezivanja u milisekundima (zadano: 5000)</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>System error: </source>
-        <translation type="unfinished"/>
+        <translation>Sistemska greška: </translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Transaction amount too small</source>
-        <translation type="unfinished"/>
+        <translation>Transakcijska količina je preniska</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction amounts must be positive</source>
-        <translation type="unfinished"/>
+        <translation>Transakcijska količina mora biti pozitivna vrijednost</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction too large</source>
-        <translation type="unfinished"/>
+        <translation>Transakcija je prevelika</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation type="unfinished"/>
+        <translation>Koristi UPnP za mapiranje uključenog mrežnog priključka (zadana postavka: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation type="unfinished"/>
+        <translation>Koristi UPnP za mapiranje uključenog mrežnog priključka (zadana postavka: 1 – ako je uključeno slušanje)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation type="unfinished"/>
+        <translation>Koristi zastupnika za dosezanje sakrivenih Tor usluga (zadana postavka: ista kao za -proxy)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
-        <translation type="unfinished"/>
+        <translation>Korisničko ime za JSON-DPP povezivanja</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Warning</source>
-        <translation type="unfinished"/>
+        <translation>Upozorenje</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation type="unfinished"/>
+        <translation>Upozorenje: ova je verzija zastarjela, potrebno je ažuriranje!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
-        <translation type="unfinished"/>
+        <translation>Moraš obnoviti bazu podataka naredbom -reindex za korištenje naredbe -txindex</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation type="unfinished"/>
+        <translation>pokvarena wallet.dat datoteka, spašavanje podataka nije uspjelo</translation>
     </message>
     <message>
         <location line="-50"/>
         <source>Password for JSON-RPC connections</source>
-        <translation type="unfinished"/>
+        <translation>Lozinka za JSON-DPP povezivanja</translation>
     </message>
     <message>
         <location line="-67"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation type="unfinished"/>
+        <translation>Omogući JSON-DPP povezivanja iz određenih IP adresa</translation>
     </message>
     <message>
         <location line="+76"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation type="unfinished"/>
+        <translation>Pošalji naredbe čvoru na ovoj &lt;IP&gt; adresi (zadana: 127.0.0.1)</translation>
     </message>
     <message>
         <location line="-120"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation type="unfinished"/>
+        <translation>Izvrši naredbe kada se najviši blok promijeni (%s u Cmd.exe je zamjenjen kriptografskim sažetkom bloka)</translation>
     </message>
     <message>
         <location line="+147"/>
         <source>Upgrade wallet to latest format</source>
-        <translation type="unfinished"/>
+        <translation>Ažuriraj novčanik u zadnji format</translation>
     </message>
     <message>
         <location line="-21"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation type="unfinished"/>
+        <translation>Postavi broj ključeva u bazenu ključeva (zadana: 100)</translation>
     </message>
     <message>
         <location line="-12"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation type="unfinished"/>
+        <translation>Provjeri lanac blokova za nedostajuće transakcije u novčaniku</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation type="unfinished"/>
+        <translation>Koristi OpenSSL (https) za JSON-DPP povezivanja</translation>
     </message>
     <message>
         <location line="-26"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation type="unfinished"/>
+        <translation>Datoteka certifikata poslužitelja (zadana: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
-        <translation type="unfinished"/>
+        <translation>Privatni ključ poslužitelja (zadani: server.pem)</translation>
     </message>
     <message>
         <location line="-151"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
-        <translation type="unfinished"/>
+        <translation>Prihvaćene šifre (zadane: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+165"/>
         <source>This help message</source>
-        <translation type="unfinished"/>
+        <translation>Ova poruka pomoći</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation type="unfinished"/>
+        <translation>Nije bilo moguće povezivati se na %s na ovom računalu (povezivanje je vraćalo grešku %d, %s)</translation>
     </message>
     <message>
         <location line="-91"/>
         <source>Connect through socks proxy</source>
-        <translation type="unfinished"/>
+        <translation>Povezuj se preko SOCKS zastupnika</translation>
     </message>
     <message>
         <location line="-10"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation type="unfinished"/>
+        <translation>Omogući DNS pretraživanje za -addnode, -seednode i -connect</translation>
     </message>
     <message>
         <location line="+55"/>
         <source>Loading addresses...</source>
-        <translation type="unfinished"/>
+        <translation>Učitavam adrese...</translation>
     </message>
     <message>
         <location line="-35"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation type="unfinished"/>
+        <translation>Greška u učitavanju wallet.dat datoteke: novčanik je pokvaren</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat: Wallet requires newer version of vDinar</source>
-        <translation type="unfinished"/>
+        <translation>Greška u učitavanju wallet.dat datoteke: novčanik zahtijeva noviju verziju vDinara</translation>
     </message>
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart vDinar to complete</source>
-        <translation type="unfinished"/>
+        <translation>Novčanik se morao prebrisati: pokreni ponovo vDinar kako bi završio</translation>
     </message>
     <message>
         <location line="-95"/>
         <source>Error loading wallet.dat</source>
-        <translation type="unfinished"/>
+        <translation>Greška u učitavanju wallet.dat datoteke</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nevažeća -proxy adresa: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+56"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nepoznata mreža spomenuta u -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="-1"/>
         <source>Unknown -socks proxy version requested: %i</source>
-        <translation type="unfinished"/>
+        <translation>Traži se nepoznata verzija -socks zastupnika: %i</translation>
     </message>
     <message>
         <location line="-96"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nemoguće pronaći -bind adresu: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nemoguće pronaći -externalip adresu: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+44"/>
@@ -2863,74 +2863,76 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
     <message>
         <location line="+1"/>
         <source>Invalid amount</source>
-        <translation type="unfinished"/>
+        <translation>Nevažeća količina</translation>
     </message>
     <message>
         <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation type="unfinished"/>
+        <translation>Nema dovoljno sredstva</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Loading block index...</source>
-        <translation type="unfinished"/>
+        <translation>Učitavam indeks blokova...</translation>
     </message>
     <message>
         <location line="-57"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation type="unfinished"/>
+        <translation>Dodaj čvor za povezivanje i pokušaj čuvati tu vezu</translation>
     </message>
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. vDinar is probably already running.</source>
-        <translation type="unfinished"/>
+        <translation>Povezivanje na %s na ovom računalu nije moguće. vDinar je vjerovatno već pokrenut.</translation>
     </message>
     <message>
         <location line="+64"/>
         <source>Fee per KB to add to transactions you send</source>
-        <translation type="unfinished"/>
+        <translation>Porez po KB-u koji će se dodati svakoj izlaznoj transakciji</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Loading wallet...</source>
-        <translation type="unfinished"/>
+        <translation>Učitavanje novčanika...</translation>
     </message>
     <message>
         <location line="-52"/>
         <source>Cannot downgrade wallet</source>
-        <translation type="unfinished"/>
+        <translation>Unazađenje novčanika nije moguće</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot write default address</source>
-        <translation type="unfinished"/>
+        <translation>Pisanje zadane adrese nije moguće</translation>
     </message>
     <message>
         <location line="+64"/>
         <source>Rescanning...</source>
-        <translation type="unfinished"/>
+        <translation>Provjeravam...</translation>
     </message>
     <message>
         <location line="-57"/>
         <source>Done loading</source>
-        <translation type="unfinished"/>
+        <translation>Učitavanje je gotovo</translation>
     </message>
     <message>
         <location line="+82"/>
         <source>To use the %s option</source>
-        <translation type="unfinished"/>
+        <translation>Kako bi koristio %s opciju</translation>
     </message>
     <message>
         <location line="-74"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Greška</translation>
     </message>
     <message>
         <location line="-31"/>
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation type="unfinished"/>
+        <translation>Moraš napisati rpcpassword=&lt;lozinka&gt; u konfiguracijskoj datoteci:
+%s
+Ako datoteka ne postoji, napravi je sa dozvolama za čitanje samo za vlasnika.</translation>
     </message>
 </context>
 </TS>
