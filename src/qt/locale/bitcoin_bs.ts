@@ -542,7 +542,7 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to vDinar network</source>
-        <translation>%n aktivna/e veza/e sa mrežom vDinara</translation>
+        <translation><numerusform>%n aktivna veza na vDinar mrežu</numerusform><numerusform>%n aktivne veze na vDinar mrežu</numerusform><numerusform>%n aktivnih veza na vDinar mrežu</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -562,17 +562,17 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation>%n sata/i</translation>
+        <translation><numerusform>%n sat</numerusform><numerusform>%n sata/i</numerusform><numerusform>%n sati</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation>%n dana</translation>
+        <translation><numerusform>%n dan</numerusform><numerusform>%n dana</numerusform><numerusform>%n dana</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation>%n sedmice/a</translation>
+        <translation><numerusform>%n sedmica</numerusform><numerusform>%n sedmice</numerusform><numerusform>%n sedmica</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1036,7 +1036,7 @@ Adresa: %4
     <message>
         <location line="+107"/>
         <source>Immature:</source>
-        <translation>Nedozreo:<translation>
+        <translation>Nedozreo:</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1688,7 +1688,7 @@ Adresa: %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation>, prenošeno preko %n čvora/ova</translation>
+        <translation><numerusform>, prenošeno preko %n čvora</numerusform><numerusform>, prenošeno preko %n čvorova</numerusform><numerusform>, prenošeno preko %n čvorova</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1741,7 +1741,7 @@ Adresa: %4
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation>sazrijevat će za %n blok(ova)</translation>
+        <translation><numerusform>sazrijevat će za jedan blok</numerusform><numerusform>sazrijevat će za %n blokova</numerusform><numerusform>sazrijevat će za %n blokova</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1824,7 +1824,7 @@ Adresa: %4
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
-        <translation>Otvoreno za još %n bloka/ova</translation>
+        <translation><numerusform>Otvoreno za još jednog bloka</numerusform><numerusform>Otvoreno za još %n blokova</numerusform><numerusform>Otvoreno za još %n blokova</numerusform></translation>
     </message>
     <message>
         <location line="+70"/>
@@ -1870,7 +1870,7 @@ Adresa: %4
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation>Otvoreno za još %n bloka/ova</translation>
+        <translation><numerusform>Otvoreno za još jednog bloka</numerusform><numerusform>Otvoreno za još %n blokova</numerusform><numerusform>Otvoreno za još %n blokova</numerusform></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1895,7 +1895,7 @@ Adresa: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blok(ova)</translation>
+        <translation><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za jedan blok</numerusform><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blokova</numerusform><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blokova</numerusform></translation>
     </message>
     <message>
         <location line="+5"/>
