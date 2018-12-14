@@ -164,8 +164,8 @@
         <string notr="true">color: rgb(104, 41, 7);</string>
        </property>
        <property name="text">
-        <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin developers
-Copyright &amp;copy; 2011-YYYY The Litecoin developers
+        <string notr="true">Copyright &amp;copy; 2009-2014 The Bitcoin developers
+Copyright &amp;copy; 2011-2014 The Litecoin developers
 Copyright &amp;copy; 2017-YYYY The vDinar developers</string>
        </property>
        <property name="textFormat">

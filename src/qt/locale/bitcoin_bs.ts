@@ -35,7 +35,17 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message>
         <location line="+0"/>
         <source>The vDinar developers</source>
-        <translation>vDinar razvijači</translation>
+        <translation>Razvijači virtualnog Dinara</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The Bitcoin developers</source>
+        <translation>Razvijači Bitcoin-a</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The Litecoin developers</source>
+        <translation>Razvijači Litecoin-a</translation>
     </message>
 </context>
 <context>
@@ -202,7 +212,7 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
         <translation>Ponovo napiši lozinku</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+33"/>
+        <location filename="../askpassphrasedialog.cpp" line="+37"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Napiši novu lozinku u novčanik.&lt;br/&gt;Lozinka bi trebala biti duga &lt;b&gt;najmanje 10 slova (slučajna)&lt;/b&gt;, ili &lt;b&gt;najmanje osam riječi&lt;/b&gt;.</translation>
     </message>
@@ -242,7 +252,17 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
         <translation>Napiši staru i novu adresu u novčanik.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+9"/>
+        <source>&amp;OK</source>
+        <translation>&amp;U redu</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Cancel</source>
+        <translation>&amp;Poništi</translation>
+    </message>
+    <message>
+        <location line="+39"/>
         <source>Confirm wallet encryption</source>
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
@@ -554,15 +574,15 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
         <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
         <translation>Obrađena/e %1 od %2 (procijenjenih) kocaka istorije transakcija.</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <location line="+4"/>
         <source>Processed %1 blocks of transaction history.</source>
-        <translation>Obrađen/o %1 blok(a) istorije transakcija.</translation>
+        <translation><numerusform>Obrađen %1 blok istorije transakcija.</numerusform><numerusform>Obrađeno %1 blokova istorije transakcija.</numerusform><numerusform>Obrađeno %1 blokova istorije transakcija.</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n sat</numerusform><numerusform>%n sata/i</numerusform><numerusform>%n sati</numerusform></translation>
+        <translation><numerusform>%n sat</numerusform><numerusform>%n sata</numerusform><numerusform>%n sati</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
@@ -754,7 +774,7 @@ Adresa: %4
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+502"/>
         <location line="+12"/>
         <source>vDinar-Qt</source>
         <translation>vDinar-Qt</translation>
@@ -777,7 +797,7 @@ Adresa: %4
     <message>
         <location line="+4"/>
         <source>UI options</source>
-        <translation>opcije korisničkog sučelja</translation>
+        <translation>Opcije korisničkog sučelja</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -794,11 +814,16 @@ Adresa: %4
         <source>Show splash screen on startup (default: 1)</source>
         <translation>Pokaži početni zaslon na pokretanju (zadano: 1)</translation>
     </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;OK</source>
+        <translation>&amp;U redu</translation>
+    </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
-        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <location filename="../forms/optionsdialog.ui" line="+429"/>
         <source>Options</source>
         <translation>Opcije</translation>
     </message>
@@ -809,16 +834,6 @@ Adresa: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Neobavezni transakcijski porez po kB-u koji pomaže brzom odobrenju tvojih transakcija. Većina transakcija je 1 kB.</translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>Pay transaction &amp;fee</source>
-        <translation>Plati transakcijski &amp;porez</translation>
-    </message>
-    <message>
-        <location line="+31"/>
         <source>Automatically start vDinar after logging in to the system.</source>
         <translation>Automatski pokreni vDinar nakon prijave u sistem.</translation>
     </message>
@@ -839,6 +854,31 @@ Adresa: %4
     </message>
     <message>
         <location line="+13"/>
+        <source>W&amp;allet</source>
+        <translation>N&amp;ovčanik</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
+        <translation>Neobavezni transakcijski porez po kB-u koji pomaže brzom odobrenju tvojih transakcija. Većina transakcija je 1 kB.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Plati transakcijski &amp;porez</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
+        <translation>Ako isključiš potrošnju nepotvrđenog novca, novčići iz jedne transakcije neće biti potrošljivi dok transakcija ne bude imala barem jednu potvrdu. Ovo također utječe na način računanja tvog kredita.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Spend unconfirmed change  (experts only)</source>
+        <translation>Potroši nepotvrđeni novac (samo za stručnjake)</translation>
+    </message>
+    <message>
+        <location line="+21"/>
         <source>&amp;Network</source>
         <translation>Mreža</translation>
     </message>
@@ -951,6 +991,16 @@ Adresa: %4
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
         <translation>&amp;Prikazuj adrese u transakcijskom spisku</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Whether to show coin control features or not.</source>
+        <translation>Pokazati svojstva o upravljanju novčića ili ne.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display coin &amp;control features (experts only!)</source>
+        <translation>Pokaži &amp;svojstva o upravljanju novčića (samo za stručnjake!)</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1265,7 +1315,7 @@ Adresa: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the vDinar RPC console.</source>
-        <translation>Dobrodošao u vDinar RPC konzolu.</translation>
+        <translation>Dobrodošao u vDinar DPP konzolu.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1649,6 +1699,16 @@ Adresa: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
+        <source>The Bitcoin developers</source>
+        <translation>Razvijači Bitcoin-a</translation>
+    </message>
+    <message>
+        <location filename="../splashscreen.cpp" line="+1"/>
+        <source>The Litecoin developers</source>
+        <translation>Razvijači Litecoin-a</translation>
+    </message>
+    <message>
+        <location filename="../splashscreen.cpp" line="+1"/>
         <source>The vDinar developers</source>
         <translation>Razvijači virtualnog Dinara</translation>
     </message>
@@ -1895,7 +1955,7 @@ Adresa: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za jedan blok</numerusform><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blokova</numerusform><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blokova</numerusform></translation>
+        <translation><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blok</numerusform><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blokove</numerusform><numerusform>Kopani kredit bit će dostupan kada ono sazrije, to jest za %n blokova</numerusform></translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2186,22 +2246,22 @@ Adresa: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+94"/>
+        <location filename="../bitcoinstrings.cpp" line="+92"/>
         <source>vDinar version</source>
         <translation>Verzija vDinara</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+105"/>
         <source>Usage:</source>
         <translation>Korištenje:</translation>
     </message>
     <message>
-        <location line="-29"/>
+        <location line="-30"/>
         <source>Send command to -server or vdinard</source>
         <translation>Napiši naredbe na -server ili vdinard</translation>
     </message>
     <message>
-        <location line="-23"/>
+        <location line="-25"/>
         <source>List commands</source>
         <translation>Pokaži popis naredba</translation>
     </message>
@@ -2211,12 +2271,12 @@ Adresa: %4
         <translation>Dobij pomoć za specifičnu naredbu</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+25"/>
         <source>Options:</source>
         <translation>Opcije:</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+26"/>
         <source>Specify configuration file (default: vdinar.conf)</source>
         <translation>Odredi konfiguracijsku datoteku (zadana: vdinar.conf)</translation>
     </message>
@@ -2236,12 +2296,12 @@ Adresa: %4
         <translation>Odredi veličinu predmemorijske baze podataka u MB (zadana: 25)</translation>
     </message>
     <message>
-        <location line="-28"/>
+        <location line="-30"/>
         <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
         <translation>Slušaj za povezivanja na &lt;mrežni priključak&gt; (zadani: 9333; u eksperimentalnoj mreži: 19333)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
         <translation>Čuvaj najviše toliko povezanih čvorova (zadana vrijednost: 125)</translation>
     </message>
@@ -2251,9 +2311,14 @@ Adresa: %4
         <translation>Poveži se na glavni čvor za dobivanje novih neglavnih, onda se od prvog iskopčaj</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+85"/>
         <source>Specify your own public address</source>
         <translation>Odredi svoju javnu adresu</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
+        <translation>Potroši nepotvrđene novčiće u slanju transakcija (zadana postavka: 1)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2261,7 +2326,7 @@ Adresa: %4
         <translation>Granica za iskopčavanje nefunkcionalnih čvorova (zadana vrijednost: 100)</translation>
     </message>
     <message>
-        <location line="-134"/>
+        <location line="-138"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Broj sekundi razmaka za novo povezivanje nefunkcionalnih čvorova (zadani: 86400)</translation>
     </message>
@@ -2281,22 +2346,22 @@ Adresa: %4
         <translation>Prihvaćaj naredbe za komandnu liniju i JSON-DPP naredbe</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+79"/>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Pokreni u pozadini kao uslugu i prihvaćaj naredbe</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+38"/>
         <source>Use the test network</source>
         <translation>Koristi eksperimentalnu mrežu</translation>
     </message>
     <message>
-        <location line="-112"/>
+        <location line="-115"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Prihvaćaj vanjska povezivanja (zadana vrijednost: 1 – osim naredbom -proxy ili -connect)</translation>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-78"/>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
@@ -2321,7 +2386,7 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
 </translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+15"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>Dogodila se greška tokom određivanja DPP mrežnog priključka %u za slušanje na IPv6, vraćam se na IPv4: %s</translation>
     </message>
@@ -2392,8 +2457,13 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
     </message>
     <message>
         <location line="+14"/>
+        <source>Allow peers to set bloom filters (default: 1)</source>
+        <translation>Dozvoli čvorovima da postave blumove filtare (zadana postavka: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Pokušaj vraćanja privatnih ključeva iz pokvarene datoteke wallet.dat</translation>
+        <translation>Pokušaj vraćati privatne ključeve iz pokvarene datoteke wallet.dat</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2531,12 +2601,12 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
         <translation>Koliko duboko provjeriti blokove (od 0 do 4; zadana vrijednost: 3)</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+21"/>
         <source>Not enough file descriptors available.</source>
         <translation>Nema dovoljno datotečnih opisivača.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Obnovi indeks lanca blokova iz trenutačnih blk000??.dat datoteka</translation>
     </message>
@@ -2546,7 +2616,7 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
         <translation>Postavi broj rasporeda na usluzi DPP poziva (zadani: 4)</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+27"/>
         <source>Verifying blocks...</source>
         <translation>Provjeravam blokove...</translation>
     </message>
@@ -2556,17 +2626,17 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
         <translation>Povjeravam novčanik...</translation>
     </message>
     <message>
-        <location line="-69"/>
+        <location line="-72"/>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Uvedi blokove iz vanjske blk000??.dat datoteke</translation>
     </message>
     <message>
-        <location line="-76"/>
+        <location line="-77"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation>Postavi broj rasporeda provijere izvornika (najviše 16; napiši 0 za automatsko postavljanje – zadana vrijednost)</translation>
     </message>
     <message>
-        <location line="+77"/>
+        <location line="+78"/>
         <source>Information</source>
         <translation>Informacije</translation>
     </message>
@@ -2586,7 +2656,7 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
         <translation>Nevažeća količina za -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Maintain a full transaction index (default: 0)</source>
         <translation>Čuvaj puni indeks transakcija (zadana postavka: 0)</translation>
     </message>
@@ -2624,6 +2694,11 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
         <location line="+2"/>
         <source>Prepend debug output with timestamp</source>
         <translation>Dodaj datum na početak izvedenog izvještaja</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Prepend debug output with timestamp (default: 1)</source>
+        <translation>Dodaj datum na početak izvedenog izvještaja (zadana postavka: 1)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2722,6 +2797,11 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
     </message>
     <message>
         <location line="+1"/>
+        <source>When creating transactions, ignore inputs with value less than this (default: 0.0001)</source>
+        <translation>Zanemari izvore sa manjom vrijednošću od ove kada se prave transakcije (zadana: 0.0001)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
         <translation>Moraš obnoviti bazu podataka naredbom -reindex za korištenje naredbe -txindex</translation>
     </message>
@@ -2731,27 +2811,27 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
         <translation>pokvarena wallet.dat datoteka, spašavanje podataka nije uspjelo</translation>
     </message>
     <message>
-        <location line="-50"/>
+        <location line="-52"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Lozinka za JSON-DPP povezivanja</translation>
     </message>
     <message>
-        <location line="-67"/>
+        <location line="-68"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Omogući JSON-DPP povezivanja iz određenih IP adresa</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+78"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation>Pošalji naredbe čvoru na ovoj &lt;IP&gt; adresi (zadana: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-122"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Izvrši naredbe kada se najviši blok promijeni (%s u Cmd.exe je zamjenjen kriptografskim sažetkom bloka)</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+149"/>
         <source>Upgrade wallet to latest format</source>
         <translation>Ažuriraj novčanik u zadnji format</translation>
     </message>
@@ -2858,7 +2938,7 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
     <message>
         <location line="+44"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Nevažeća količina za -paytxfee=&lt;količina&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2894,6 +2974,11 @@ na primjer: alertnotify=echo %%s | mail -s &quot;vDinar upozorenje&quot; tvoja@a
         <location line="+19"/>
         <source>Loading wallet...</source>
         <translation>Učitavanje novčanika...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: 25)</source>
+        <translation>Pamti najviše toliko nespojivih transakcija (zadana vrijednost: 25)</translation>
     </message>
     <message>
         <location line="-52"/>
