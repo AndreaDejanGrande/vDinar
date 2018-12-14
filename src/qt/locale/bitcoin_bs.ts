@@ -1300,7 +1300,7 @@ Adresa: %4
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation>Dodaj &amp;primatelj</translation>
+        <translation>Dodaj &amp;primatelja</translation>
     </message>
     <message>
         <location line="+20"/>
