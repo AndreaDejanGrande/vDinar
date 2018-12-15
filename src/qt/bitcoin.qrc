@@ -53,7 +53,7 @@
         <file alias="af_ZA">locale/bitcoin_af_ZA.ts</file>
         <file alias="ar">locale/bitcoin_ar.ts</file>
         <file alias="bg">locale/bitcoin_bg.ts</file>
-        <file alias="bs">locale/bitcoin_bs.ts</file>
+        <file alias="bs">locale/bitcoin_bs.qm</file>
         <file alias="ca">locale/bitcoin_ca.ts</file>
         <file alias="ca_ES">locale/bitcoin_ca_ES.ts</file>
         <file alias="cs">locale/bitcoin_cs.ts</file>
