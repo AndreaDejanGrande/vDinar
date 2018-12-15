@@ -1081,16 +1081,6 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
-int64 static GetBlockValue(int nHeight, int64 nFees)
-{
-    int64 nSubsidy = 50 * COIN;
-
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // vDinar: 840k blocks in ~4 years
-
-    return nSubsidy + nFees;
-}
-
 int64 static GetBlockReward(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 49 * COIN;
@@ -2175,7 +2165,7 @@ bool CBlock::CheckBlock(const CBlock* block, uint32_t nHeight, CValidationState 
     if (!vtx[1].IsCoinBase()) {
         if(vtx[1].vin.size() != 1)
         {
-            return state.DoS(100, error("CheckBlock() : second transaction's vin size not 1 but %i", vtx[1].vin.size()));
+            return state.DoS(100, error("CheckBlock() : second transaction's vin size not 1 but %llu", vtx[1].vin.size()));
         }
         if(!vtx[1].vin[0].prevout.IsNull())
         {
@@ -3052,7 +3042,6 @@ bool LoadExternalBlockFile(FILE* fileIn, CDiskBlockPos *dbp)
 
 string GetWarnings(string strFor)
 {
-    int nPriority = 0;
     string strStatusBar;
     string strRPC;
 
@@ -3065,14 +3054,12 @@ string GetWarnings(string strFor)
     // Misc warnings like out of disk space and clock is wrong
     if (strMiscWarning != "")
     {
-        nPriority = 1000;
         strStatusBar = strMiscWarning;
     }
 
     // Longer invalid proof-of-work chain
     if (pindexBest && nBestInvalidWork > nBestChainWork + (pindexBest->GetBlockWork() * 6).getuint256())
     {
-        nPriority = 2000;
         strStatusBar = strRPC = _("Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.");
     }
 
