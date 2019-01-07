@@ -370,7 +370,7 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation>Pretraži istoriju transakcija</translation>
+        <translation>Pretraži povijest transakcija</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -572,12 +572,12 @@ Ovaj produkt uključuje softver od strane OpenSSL Projekta za korištenje u Open
     <message>
         <location line="+12"/>
         <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Obrađena/e %1 od %2 (procijenjenih) kocaka istorije transakcija.</translation>
+        <translation>Obrađena/e %1 od %2 (procijenjenih) kocaka povijesti transakcija.</translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>Processed %1 blocks of transaction history.</source>
-        <translation><numerusform>Obrađen %1 blok istorije transakcija.</numerusform><numerusform>Obrađeno %1 blokova istorije transakcija.</numerusform><numerusform>Obrađeno %1 blokova istorije transakcija.</numerusform></translation>
+        <translation><numerusform>Obrađen %1 blok povijesti transakcija.</numerusform><numerusform>Obrađeno %1 blokova povijesti transakcija.</numerusform><numerusform>Obrađeno %1 blokova povijesti transakcija.</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+20"/>
@@ -970,7 +970,7 @@ Adresa: %4
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting vDinar.</source>
-        <translation>Jezik korisničkog sučelja može biti izabran ovdje. Ova će promjena biti djelovati nakon novog pokretanja vDinara.</translation>
+        <translation>Jezik korisničkog sučelja može biti izabran ovdje. Ova će promjena djelovati nakon novog pokretanja vDinara.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1320,7 +1320,7 @@ Adresa: %4
     <message>
         <location line="+1"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Koristi strijele gore i dole kako bi upravljao istorijom, onda &lt;b&gt;Ctrl-L&lt;/b&gt; za čišćenje ekrana.</translation>
+        <translation>Koristi strijele gore i dole kako bi upravljao poviješću, onda &lt;b&gt;Ctrl-L&lt;/b&gt; za čišćenje ekrana.</translation>
     </message>
     <message>
         <location line="+1"/>
