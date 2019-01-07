@@ -90,7 +90,7 @@
         <file alias="ro_RO">locale/bitcoin_ro_RO.ts</file>
         <file alias="ru">locale/bitcoin_ru.ts</file>
         <file alias="sk">locale/bitcoin_sk.ts</file>
-        <file alias="sr">locale/bitcoin_sr.ts</file>
+        <file alias="sr">locale/bitcoin_sr.qm</file>
         <file alias="sv">locale/bitcoin_sv.ts</file>
         <file alias="th_TH">locale/bitcoin_th_TH.ts</file>
         <file alias="tr">locale/bitcoin_tr.ts</file>
