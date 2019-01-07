@@ -970,7 +970,7 @@ Adresa: %4
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting vDinar.</source>
-        <translation>Jezik korisničkog sučelja može biti izabran ovdje. Ova će promjena biti djelovati nakon novog pokretanja vDinara.</translation>
+        <translation>Jezik korisničkog sučelja može biti izabran ovdje. Ova će promjena djelovati nakon novog pokretanja vDinara.</translation>
     </message>
     <message>
         <location line="+11"/>
