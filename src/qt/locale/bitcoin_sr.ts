@@ -562,7 +562,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to vDinar network</source>
-        <translation><нумерусформ>%н активна веза на вДинар мрежу</нумерусформ><нумерусформ>%н активне везе на вДинар мрежу</нумерусформ><нумерусформ>%н активних веза на вДинар мрежу</нумерусформ></translation>
+        <translation><numerusform>%n активна веза на вДинар мрежу</numerusform><numerusform>%n активне везе на вДинар мрежу</numerusform><numerusform>%n активних веза на вДинар мрежу</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -577,22 +577,22 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+4"/>
         <source>Processed %1 blocks of transaction history.</source>
-        <translation><нумерусформ>Обрађен %1 блок историје трансакција.</нумерусформ><нумерусформ>Обрађено %1 блокова историје трансакција.</нумерусформ><нумерусформ>Обрађено %1 блокова историје трансакција.</нумерусформ></translation>
+        <translation><numerusform>Обрађен %1 блок историје трансакција.</numerusform><numerusform>Обрађено %1 блокова историје трансакција.</numerusform><numerusform>Обрађено %1 блокова историје трансакција.</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation><нумерусформ>%н сат</нумерусформ><нумерусформ>%н сата</нумерусформ><нумерусформ>%н сати</нумерусформ></translation>
+        <translation><numerusform>%n сат</numerusform><numerusform>%n сата</numerusform><numerusform>%n сати</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><нумерусформ>%н дан</нумерусформ><нумерусформ>%н дана</нумерусформ><нумерусформ>%н дана</нумерусформ></translation>
+        <translation><numerusform>%n дан</numerusform><numerusform>%n дана</numerusform><numerusform>%n дана</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation><нумерусформ>%н седмица</нумерусформ><нумерусформ>%н седмице</нумерусформ><нумерусформ>%н седмица</нумерусформ></translation>
+        <translation><numerusform>%n седмица</numerusform><numerusform>%n седмице</numerusform><numerusform>%n седмица</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1748,7 +1748,7 @@ Address: %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><нумерусформ>, преношено преко %н чвора</нумерусформ><нумерусформ>, преношено преко %н чворова</нумерусформ><нумерусформ>, преношено преко %н чворова</нумерусформ></translation>
+        <translation><numerusform>, преношено преко %n чвора</numerusform><numerusform>, преношено преко %n чворова</numerusform><numerusform>, преношено преко %n чворова</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1801,7 +1801,7 @@ Address: %4
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation><нумерусформ>сазреват ће за један блок</нумерусформ><нумерусформ>сазреват ће за %н блокова</нумерусформ><нумерусформ>сазреват ће за %н блокова</нумерусформ></translation>
+        <translation><numerusform>сазреват ће за један блок</numerusform><numerusform>сазреват ће за %n блокова</numerusform><numerusform>сазреват ће за %n блокова</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1884,7 +1884,7 @@ Address: %4
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
-        <translation><нумерусформ>Отворено за још једног блока</нумерусформ><нумерусформ>Отворено за још %н блокова</нумерусформ><нумерусформ>Отворено за још %н блокова</нумерусформ></translation>
+        <translation><numerusform>Отворено за још једног блока</numerusform><numerusform>Отворено за још %n блокова</numerusform><numerusform>Отворено за још %n блокова</numerusform></translation>
     </message>
     <message>
         <location line="+70"/>
@@ -1930,7 +1930,7 @@ Address: %4
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation><нумерусформ>Отворено за још једног блока</нумерусформ><нумерусформ>Отворено за још %н блокова</нумерусформ><нумерусформ>Отворено за још %н блокова</нумерусформ></translation>
+        <translation><numerusform>Отворено за још једног блока</numerusform><numerusform>Отворено за још %n блокова</numerusform><numerusform>Отворено за још %n блокова</numerusform></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1955,7 +1955,7 @@ Address: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation><нумерусформ>Копани кредит бит ће доступан када оно сазре, то јест за %н блок</нумерусформ><нумерусформ>Копани кредит бит ће доступан када оно сазре, то јест за %н блокове</нумерусформ><нумерусформ>Копани кредит бит ће доступан када оно сазре, то јест за %н блокова</нумерусформ></translation>
+        <translation><numerusform>Копани кредит бит ће доступан када оно сазре, то јест за %n блок</numerusform><numerusform>Копани кредит бит ће доступан када оно сазре, то јест за %n блокове</numerusform><numerusform>Копани кредит бит ће доступан када оно сазре, то јест за %n блокова</numerusform></translation>
     </message>
     <message>
         <location line="+5"/>
