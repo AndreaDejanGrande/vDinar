@@ -41,14 +41,18 @@ namespace Checkpoints
         (  7500, uint256("0x5600fdb061453b324bf279283c361ecca01ad5889caf76aba7ff943ae4872fa3")) //7500
         ( 10000, uint256("0x60863e4019b0531cd595b51f3da63bc156638f254c4a08da021fc6c3bd6dafe6")) //10000
         ( 10565, uint256("0x6527b36d18f451f4008ea9d830815315464b268bdfe8e231d4ad7e6bce473aae")) //PATCH solving 1.0's DisconnectBlock() error crashing wallets on restart and long term run:
-                                                                                               //      blocks before shutdowns have to be put as checkpoints to avoid accepting forks made
-                                                                                               //      during pauses
+                                                                                                //      blocks before shutdowns have to be put as checkpoints to avoid accepting forks made
+                                                                                                //      during pauses
         ( 20000, uint256("0x92593ea944560f7c471f25eadfd91fd7a183a887d94880a62b891a425888c5bb"))
         ( 30000, uint256("0x01720c5da8ff114989b8561251362116010412008301d1ce8096406da70a6e67"))
         ( 40000, uint256("0xd9bb731363cd049f799087fea67644154cbb09ed58fa0ac59026628b0a180fc8"))
         ( 50000, uint256("0x32955944d2c6af23e85789a82b848fb23a6c33ec8d544c00e29ac891d68e37c6"))
         ( 75000, uint256("0xbd56babfc97678786a39328ff80d7e1a5659161223cc74f5b7a05e61bcb87f31"))
         (100000, uint256("0x7ce140c94d55401db67f0e8e54f947323020c471dfd76e5ada60d09dfb27f3be"))
+        (125000, uint256("0x386be1ec56fa92e05ad19afa69062b94d831fb6354daf894fa667bfae3bc9726"))
+        (150000, uint256("0xb6b13c702a883ad8a6e6895f80ce1c51e20292c36bfc1e32818969fe6f5ff9a6"))
+        (175000, uint256("0xa19c4506bedc4c8be96930c75cfcb70c23533c47cb6b6f077a549c0e021dfe8a"))
+        (200000, uint256("0xfd0c07d0c07d993463704de9cefeba6b2dd8edde95dbdb9f800b59ce2285c35a"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
