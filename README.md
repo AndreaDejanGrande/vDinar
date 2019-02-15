@@ -1,7 +1,7 @@
 vDinar - virtualni Dinar <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="40px" height="40px">
 ======
 
-https://www.vdinar.info
+https://www.vdinar.info/en/
 
 Copyright (c) 2009-2014 Bitcoin Developers
 
