@@ -28,7 +28,7 @@ https://www.vdinar.info
 
 Разлике у структури блокова (од Bitcoin-а)
  - **2 "coinbase" (без извора) трансакције уместо једне**
- - **оба "coinbase" трансакције укључују исти "extranonce"**
+ - **обе "coinbase" трансакције укључују исти "extranonce"**
 
 Разлике у рудничком рударењу (са стране сервера):
    **(Након захтева рада)**
@@ -45,11 +45,11 @@ https://www.vdinar.info
  - **2 додатне информације са стране сервера ("doncoinb1", "doncoinb2")**
  - **изгради корен композиције ("hash merkle root") са првим двама трансакцијама као "coinb" и "doncoinb" (обе са истим "extranonce")**
 
-License <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
+Дозвола <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 -------
 
-vDinar is released under the terms of the MIT license. See `COPYING` for more
-information or see http://opensource.org/licenses/MIT.
+вДинар је објављен условима дозволе MIT. Погледај датотеку `COPYING` за додатне
+информације или погледај http://opensource.org/licenses/MIT.
 
 Development process <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 -------------------
