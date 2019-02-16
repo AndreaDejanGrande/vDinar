@@ -63,7 +63,7 @@ Za pokretanje alternativne mreže za testiranje napisati komandu:
 
     cd src; make -f makefile.unix test
 
-Ili za pokretanje UI sučelja:
+Ili za pokretanje QT sučelja:
 
     qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
     make -f Makefile.test
