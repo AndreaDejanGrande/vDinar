@@ -15,7 +15,7 @@ https://www.vdinar.info
 вДинар је криптовалута која користи алгоритам/протокол vCrypt са сврхом побољшања новчаних трансакција на простору бивше Југославије. Она је наравно ипак доступна свим људима без обзира јесу ли из тог простора или не.
 
 Шта је ново у виртуалном Динару?
- - **vCrypt алгоритам/протокол, много сличан алгоритму Scrypt-N, гдје се Н мултипликатор мења по броју блокова**
+ - **vCrypt алгоритам/протокол, много сличан алгоритму Scrypt-N, где се Н мултипликатор мења по броју блокова**
  - **2% свих пореза (пореза, не трансакција!) је сачувано у централној адреси за хуманитарне сврхе на простору бивше Југославије**
 
 **Нови блок сваких 2 и по минута, преполовљење сваких 840'000 блокова (~4 године)**
@@ -23,27 +23,27 @@ https://www.vdinar.info
  - **49+1 новчића за блок (49 рудару, 1 адреси за донације)**
  - **2016 блокова за промену тежине**
 
-Technical explanation <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
+Техничко објашњење <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 ---------------------
 
-Block structure differences (from Bitcoin)
- - **2 coinbase (no input) transactions instead of one**
- - **both coinbase transactions include the same extranonce**
+Разлике у структури блокова (од Bitcoin-а)
+ - **2 "coinbase" (без извора) трансакције уместо једне**
+ - **оба "coinbase" трансакције укључују исти "extranonce"**
 
-Pooled mining differences (server side):
-   **(On work request)**
- - **create two coinbase transactions instead of one**
- - **assign the 49 coins to first coinbase**
- - **assign 1/49 of the first coinbase transaction value to the second one**
- - **store merkle steps from the 2nd lvl., considering two unknown values (coinb. txs) in the 1st one**
- - **send splitted coinbase transactions (coinb1, coinb2, doncoinb1, doncoinb2), merkle steps and all the rest**
-   **(On share received)**
- - **hash coinb. and don. coinb. txs**
- - **build hash merkle root with the latter result hashed with merkle steps one by one**
+Разлике у рудничком рударењу (са стране сервера):
+   **(Након захтева рада)**
+ - **направи две coinbase трансакције уместо једне**
+ - **дели 49 новчића првој**
+ - **дели 1/49 вредности прве другој**
+ - **сачувај степене криптографске композивије ("merkle steps") из другог нивоа, узимајући у обзир две непознате вредности у првој**
+ - **обавести клијента деловима обе трансакције ("coinb1", "coinb2", "doncoinb1", "doncoinb2"), степенима криптографске композиције и све остало**
+   **(Након пријема делимичног решења)**
+ - **састави обе трансакције без извора**
+ - **изгради корен композиције ("hash merkle root") задњим резултатом састављен са свим осталим деловима композиције, један по један**
 
-Pooled mining differences (client side):
- - **receive 2 new values (doncoinb1, doncoinb2)**
- - **build hash merkle root with first two txs as coinb. and don. coinb. (both with same extranonce)**
+Разлике у рудничком рударењу (са стране клијента):
+ - **2 додатне информације са стране сервера ("doncoinb1", "doncoinb2")**
+ - **изгради корен композиције ("hash merkle root") са првим двама трансакцијама као "coinb" и "doncoinb" (обе са истим "extranonce")**
 
 License <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 -------
