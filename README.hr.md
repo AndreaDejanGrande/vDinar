@@ -16,7 +16,7 @@ vDinar je kriptovaluta koja koristi algoritam/protokol vCrypt sa svrhom poboljš
 
 Šta je novo u virtualnom Dinaru?
  - **vCrypt algoritam/protokol, mnogo sličan algoritmu Scrypt-N, gdje se N multiplikator mijenja po broju blokova**
- - **2% svih poreza (poreza, ne transakcija!) je sačuvano u centralnoj adresi za humanitarne svrhe na prostoru bivše Jugoslavije**
+ - **2% proizvedenog kapitala i 25% svih (neobaveznih) transakcijskih poreza (poreza, ne transakcija!) je sačuvano u centralnoj adresi za humanitarne svrhe na prostoru bivše Jugoslavije**
 
 **Novi blok svakih 2 i po minuta, prepolovljenje svakih 840'000 blokova (~4 godine)**
 
