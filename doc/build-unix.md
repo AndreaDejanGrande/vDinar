@@ -1,4 +1,5 @@
 Copyright (c) 2009-2013 Bitcoin Developers
+Copyright (c) 2018-2019 vDinar Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -46,7 +47,7 @@ Licenses of statically linked libraries:
 
 - Versions used in this release:
 -  GCC           4.3.3
--  OpenSSL       1.0.1c
+-  OpenSSL       1.0.1i
 -  Berkeley DB   4.8.30.NC
 -  Boost         1.37
 -  miniupnpc     1.6
@@ -131,7 +132,7 @@ exploit even if a vulnerability is found, you can take the following measures:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./vdinar
+	scanelf -e ./vdinar
 
     The output should contain:
      TYPE

@@ -1,20 +1,19 @@
-This directory contains files used to package bitcoind/bitcoin-qt
+This directory contains files used to package vdinard/vdinar-qt
 for Debian-based Linux systems.
 
-If you compile bitcoind/bitcoin-qt yourself, there are some
+If you compile vdinard/vdinar-qt yourself, there are some
 useful files here:
 
-bitcoin: URI support
+vDinar: URI support
 --------------------
 
-bitcoin-qt.desktop  (Gnome / Open Desktop)
+vdinar-qt.desktop  (Gnome / Open Desktop)
 To install:
-  sudo desktop-file-install bitcoin-qt.desktop
+  sudo desktop-file-install vdinar-qt.desktop
   sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your bitcoin-qt binary to /usr/bin
+the .desktop file or copy or symlink your vdinar-qt binary to /usr/bin
 and the ../../share/pixmaps/bitcoin128.png to /usr/share/pixmaps
 
-bitcoin-qt.protocol (KDE)
-
+vdinar-qt.protocol (KDE)

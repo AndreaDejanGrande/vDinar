@@ -1,6 +1,6 @@
 [Protocol]
-exec=bitcoin-qt '%u'
-protocol=bitcoin
+exec=vdinar-qt '%u'
+protocol=vdinar
 input=none
 output=none
 helper=true

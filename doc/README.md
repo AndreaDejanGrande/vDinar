@@ -15,10 +15,10 @@ cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cry
 
 Intro
 ---------------------
-vDinar is a free open source peer-to-peer electronic cash system that is
-completely decentralized, without the need for a central server or trusted
-parties.  Users hold the crypto keys to their own money and transact directly
-with each other, with the help of a P2P network to check for double-spending.
+vDinar is a free open source digital currency aimed to people from former
+Yugoslavia, yet available to everyone. It is based on a new block structure
+allocating 2% of every reward and a transaction fee percentage to an address
+for local donations.
 
 
 Setup
@@ -33,7 +33,7 @@ Unpack the files into a directory and run:
 - bin/64/vdinar-qt (GUI, 64-bit)
 - bin/64/vdinard (headless, 64-bit)
 
-See the documentation at the [vDinar Website](https://vdinar.info)
+See the documentation at the [vDinar Website](https://www.vdinar.info)
 for help and more information.
 
 

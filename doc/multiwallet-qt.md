@@ -12,7 +12,7 @@ some major retrofitting.
 
 Only requiring some minor changes is bitcoin.cpp.
 
-Finally, three new headers and source files will have to be added to bitcoin-qt.pro.
+Finally, three new headers and source files will have to be added to vdinar-qt.pro.
 
 Changes to class BitcoinGUI
 ---------------------------
@@ -36,7 +36,7 @@ merges while reducing the risk of breaking top-level stuff.
 
 Changes to bitcoin.cpp
 ----------------------
-bitcoin.cpp is the entry point into bitcoin-qt, and as such, will require some minor modifications to provide hooks for
+bitcoin.cpp is the entry point into vdinar-qt, and as such, will require some minor modifications to provide hooks for
 multiple wallet support. Most importantly will be the way it instantiates WalletModels and passes them to the
 singleton BitcoinGUI instance called window. Formerly, BitcoinGUI kept a pointer to a single instance of a WalletModel.
 The initial change required is very simple: rather than calling `window.setWalletModel(&walletModel);` we perform the

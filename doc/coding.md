@@ -12,7 +12,9 @@ Block style:
 	    {
 	        // When something fails, return early
 	        if(!Something())
+	        {
 	            return false;
+	        }
 	        ...
 	    }
 	

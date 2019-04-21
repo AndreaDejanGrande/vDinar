@@ -6,7 +6,7 @@ Release Process
 ###update (commit) version in sources
 
 
-	bitcoin-qt.pro
+	vdinar-qt.pro
 	contrib/verifysfbinaries/verify.sh
 	doc/README*
 	share/setup.nsi
@@ -27,7 +27,7 @@ Release Process
  From a directory containing the vdinar source, gitian-builder and gitian.sigs
   
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
-	export VERSION=0.8.7
+	export VERSION=2.0.0
 	cd ./gitian-builder
 
  Fetch and build inputs: (first time, or when dependency versions change)

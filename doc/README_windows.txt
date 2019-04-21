@@ -13,10 +13,10 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-
-vDinar is a cryptocurrency using vCrypt as a proof-of-work algorithm, aimed
-to help money transactions between southern slavic countries. Of course, it
-is available to everyone else besides being from Balkans or not.
+vDinar is a free open source digital currency aimed to people from former
+Yugoslavia, yet available to everyone. It is based on a new block structure
+allocating 2% of every reward and a transaction fee percentage to an address
+for local donations.
 
 
 Setup

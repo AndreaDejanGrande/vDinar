@@ -13,6 +13,7 @@ License
 -------
 
 Copyright (c) 2009-2012 Bitcoin Developers
+Copyright (c) 2018-2019 vDinar Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -76,8 +77,8 @@ Installing the dependencies using MacPorts is very straightforward.
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:vdinar-project/vdinar.git vdinar
-        cd vdinar
+        git clone git@github.com:AndreaDejanGrande/vDinar.git vDinar
+        cd vDinar
 
 2.  Build vdinard:
 
@@ -111,8 +112,8 @@ Rerunning "openssl version" should now return the correct version.
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/vdinar-project/vdinar.git
-        cd vdinar
+        git clone https://github.com/AndreaDejanGrande/vDinar.git
+        cd vDinar
 
 2.  Modify source in order to pick up the `openssl` library.
 

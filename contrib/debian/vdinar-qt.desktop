@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=vDinar
+Comment=Cryptocurrency from former Yugoslavia
+Comment[ba]=Kriptovaluta iz bivše Jugoslavije
+Comment[hr]=Kriptovaluta iz bivše Jugoslavije
+Comment[it]=Crittovaluta dall'ex-Jugoslavia
+Comment[sh]=Kriptovaluta iz bivše Jugoslavije
+Comment[sr]=Криптовалута из бивше Југославије
+Exec=/usr/bin/vdinar-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin128.png
+MimeType=x-scheme-handler/vdinar;
+Categories=Office;
