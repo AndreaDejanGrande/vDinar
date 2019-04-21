@@ -99,7 +99,6 @@ Value getgenerate(const Array& params, bool fHelp)
     return GetBoolArg("-gen");
 }
 
-
 Value setgenerate(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
@@ -148,18 +147,19 @@ Value getmininginfo(const Array& params, bool fHelp)
             "Returns an object containing mining-related information.");
 
     Object obj;
-    obj.push_back(Pair("blocks",        (int)nBestHeight));
-    obj.push_back(Pair("nfactor",       (int)vCrypt_N(nBestHeight)));
+    obj.push_back(Pair("blocks",          (int)nBestHeight));
+    obj.push_back(Pair("nfactor",         (int)vCrypt_N_Factor(nBestHeight)));
+    obj.push_back(Pair("k25active",       (nBestHeight >= 630000)));
     obj.push_back(Pair("currentblocksize",(uint64_t)nLastBlockSize));
-    obj.push_back(Pair("currentblocktx",(uint64_t)nLastBlockTx));
-    obj.push_back(Pair("difficulty",    (double)GetDifficulty()));
-    obj.push_back(Pair("errors",        GetWarnings("statusbar")));
-    obj.push_back(Pair("generate",      GetBoolArg("-gen")));
-    obj.push_back(Pair("genproclimit",  (int)GetArg("-genproclimit", -1)));
-    obj.push_back(Pair("hashespersec",  gethashespersec(params, false)));
-    obj.push_back(Pair("networkhashps", getnetworkhashps(params, false)));
-    obj.push_back(Pair("pooledtx",      (uint64_t)mempool.size()));
-    obj.push_back(Pair("testnet",       fTestNet));
+    obj.push_back(Pair("currentblocktx",  (uint64_t)nLastBlockTx));
+    obj.push_back(Pair("difficulty",      (double)GetDifficulty()));
+    obj.push_back(Pair("errors",          GetWarnings("statusbar")));
+    obj.push_back(Pair("generate",        GetBoolArg("-gen")));
+    obj.push_back(Pair("genproclimit",    (int)GetArg("-genproclimit", -1)));
+    obj.push_back(Pair("hashespersec",    gethashespersec(params, false)));
+    obj.push_back(Pair("networkhashps",   getnetworkhashps(params, false)));
+    obj.push_back(Pair("pooledtx",        (uint64_t)mempool.size()));
+    obj.push_back(Pair("testnet",         fTestNet));
     return obj;
 }
 

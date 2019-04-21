@@ -1088,6 +1088,12 @@ int64 static GetBlockReward(int nHeight, int64 nFees)
     // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
     nSubsidy >>= (nHeight / 840000); // vDinar: 840k blocks in ~4 years
 
+    // From block 630000 miners get 75% of the block fees, the donations address gets 25%
+    if(nHeight >= 630000)
+    {
+     nFees -= nFees >> 2;
+    }
+
     return nSubsidy + nFees;
 }
 
@@ -1097,6 +1103,12 @@ int64 static GetBlockDonations(int nHeight, int64 nFees)
 
     // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
     nSubsidy >>= (nHeight / 840000); // vDinar: 840k blocks in ~4 years
+
+    // From block 630000 miners get 75% of the block fees, the donations address gets 25%
+    if(nHeight >= 630000)
+    {
+     nFees >>= 2;
+    }
 
     return nSubsidy + nFees;
 }

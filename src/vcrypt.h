@@ -7,6 +7,7 @@
 
 /** vCrypt N value based on nHeight */
 uint32_t vCrypt_N(uint32_t nHeight);
+uint32_t vCrypt_N_Factor(uint32_t nHeight);
 
 void vcrypt_1_1_256(const char *input, char *output, uint32_t n);
 void vcrypt_1_1_256_sp_generic(const char *input, char *output, char *scratchpad, uint32_t n);

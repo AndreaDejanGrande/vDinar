@@ -46,13 +46,29 @@
 
 uint32_t vCrypt_N(uint32_t nHeight)
 {
- uint32_t nFactor = 1024; //DEFAULT vCRYPT N FACTOR
+ uint32_t nMultiplicator = 1024; // DEFAULT vCRYPT N MULTIPLICATOR
 
  uint32_t left = nHeight;
- uint32_t span = 420480; //~2 years, ~4 years, ~8 years, ~2^n years
+ uint32_t span = 420480; // ~2 years, ~4 years, ~8 years, ~2^n years
  while(left > span)
  {
-  nFactor *= 2;
+  nMultiplicator *= 2;
+  left -= span;
+  span *= 2;
+ }
+
+ return nMultiplicator;
+}
+
+uint32_t vCrypt_N_Factor(uint32_t nHeight)
+{
+ uint32_t nFactor = 9; // DEFAULT vCRYPT N FACTOR
+
+ uint32_t left = nHeight;
+ uint32_t span = 420480; // ~2 years, ~4 years, ~8 years, ~2^n years
+ while(left > span)
+ {
+  nFactor++;
   left -= span;
   span *= 2;
  }

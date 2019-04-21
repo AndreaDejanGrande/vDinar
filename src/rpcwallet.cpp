@@ -62,41 +62,86 @@ string AccountFromValue(const Value& value)
 
 Value getinfo(const Array& params, bool fHelp)
 {
-    if (fHelp || params.size() != 0)
+    if(fHelp || params.size() != 0)
+    {
         throw runtime_error(
             "getinfo\n"
             "Returns an object containing various state info.");
+    }
 
     proxyType proxy;
     GetProxy(NET_IPV4, proxy);
 
     Object obj;
-    obj.push_back(Pair("version",       (int)CLIENT_VERSION));
+    obj.push_back(Pair("version",        (int)CLIENT_VERSION));
     obj.push_back(Pair("protocolversion",(int)PROTOCOL_VERSION));
-    if (pwalletMain) {
+    if(pwalletMain)
+    {
         obj.push_back(Pair("walletversion", pwalletMain->GetVersion()));
         obj.push_back(Pair("balance",       ValueFromAmount(pwalletMain->GetBalance())));
     }
     obj.push_back(Pair("blocks",        (int)nBestHeight));
-    obj.push_back(Pair("N factor",      (int)vCrypt_N(nBestHeight)));
+    obj.push_back(Pair("nfactor",       (int)vCrypt_N(nBestHeight)));
     obj.push_back(Pair("timeoffset",    (boost::int64_t)GetTimeOffset()));
     obj.push_back(Pair("connections",   (int)vNodes.size()));
     obj.push_back(Pair("proxy",         (proxy.first.IsValid() ? proxy.first.ToStringIPPort() : string())));
     obj.push_back(Pair("difficulty",    (double)GetDifficulty()));
     obj.push_back(Pair("testnet",       fTestNet));
-    if (pwalletMain) {
+    if(pwalletMain)
+    {
         obj.push_back(Pair("keypoololdest", (boost::int64_t)pwalletMain->GetOldestKeyPoolTime()));
         obj.push_back(Pair("keypoolsize",   (int)pwalletMain->GetKeyPoolSize()));
     }
     obj.push_back(Pair("paytxfee",      ValueFromAmount(nTransactionFee)));
     obj.push_back(Pair("mininput",      ValueFromAmount(nMinimumInputValue)));
-    if (pwalletMain && pwalletMain->IsCrypted())
+    if(pwalletMain && pwalletMain->IsCrypted())
+    {
         obj.push_back(Pair("unlocked_until", (boost::int64_t)nWalletUnlockTime));
+    }
     obj.push_back(Pair("errors",        GetWarnings("statusbar")));
     return obj;
 }
 
+Value getblockchaininfo(const Array& params, bool fHelp)
+{
+    if(fHelp || params.size() != 0)
+    {
+        throw runtime_error(
+            "getblockchaininfo\n"
+            "Returns an object containing blockchain-related info.");
+    }
 
+    Object obj;
+    obj.push_back(Pair("blocks",        (int)nBestHeight));
+    obj.push_back(Pair("nfactor",       (int)vCrypt_N_Factor(nBestHeight)));
+    obj.push_back(Pair("nmultiplicator",(int)vCrypt_N(nBestHeight)));
+    obj.push_back(Pair("k25active",     (nBestHeight >= 630000)));
+    obj.push_back(Pair("timeoffset",    (boost::int64_t)GetTimeOffset()));
+    obj.push_back(Pair("testnet",       fTestNet));
+    obj.push_back(Pair("errors",        GetWarnings("statusbar")));
+    return obj;
+}
+
+Value getnetworkinfo(const Array& params, bool fHelp)
+{
+    if(fHelp || params.size() != 0)
+    {
+        throw runtime_error(
+            "getblockchaininfo\n"
+            "Returns an object containing network-related info.");
+    }
+
+    Object obj;
+    obj.push_back(Pair("protocolversion",  (int)PROTOCOL_VERSION));
+    obj.push_back(Pair("protocolsupported",(int)MIN_PEER_PROTO_VERSION));
+    obj.push_back(Pair("connections",      (int)vNodes.size()));
+    obj.push_back(Pair("timeoffset",       (boost::int64_t)GetTimeOffset()));
+    obj.push_back(Pair("testnet",          fTestNet));
+    obj.push_back(Pair("paytxfee",         ValueFromAmount(nTransactionFee)));
+    obj.push_back(Pair("mininput",         ValueFromAmount(nMinimumInputValue)));
+    obj.push_back(Pair("errors",           GetWarnings("statusbar")));
+    return obj;
+}
 
 Value getnewaddress(const Array& params, bool fHelp)
 {
