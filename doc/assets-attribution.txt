@@ -1,16 +1,18 @@
-Icon: src/qt/res/icons/clock*.png, src/qt/res/icons/tx*.png,
-      src/qt/res/src/clock_green.svg, src/qt/res/src/clock1.svg,
-      src/qt/res/src/clock2.svg, src/qt/res/src/clock3.svg,
-      src/qt/res/src/clock4.svg, src/qt/res/src/clock5.svg,
-      src/qt/res/src/inout.svg, src/qt/res/src/questionmark.svg
+Icon: src/qt/res/icons/clock*.png,
+      src/qt/res/icons/tx_inout.png (modified),
+      src/qt/res/icons/tx_input.png (modified),
+      src/qt/res/icons/tx_output.png (modified),
+      src/qt/res/src/clock*.svg,
+      src/qt/res/src/questionmark.svg
 Designer: Wladimir van der Laan
 License: MIT
+Altered files: src/qt/res/icons/tx_inout.png,
+               src/qt/res/icons/tx_input.png,
+               src/qt/res/icons/tx_output.png
 
-Icon: src/qt/res/icons/address-book.png, src/qt/res/icons/export.png,
-      src/qt/res/icons/history.png, src/qt/res/icons/key.png,
-      src/qt/res/icons/lock_*.png, src/qt/res/icons/overview.png,
-      src/qt/res/icons/receive.png, src/qt/res/icons/send.png,
-      src/qt/res/icons/synced.png, src/qt/res/icons/filesave.png
+Icon: src/qt/res/icons/export.png, src/qt/res/icons/key.png,
+      src/qt/res/icons/lock_*.png, src/qt/res/icons/synced.png,
+      src/qt/res/icons/filesave.png
 Icon Pack: NUVOLA ICON THEME for KDE 3.x
 Designer: David Vignoni (david@icon-king.com)
           ICON KING - www.icon-king.com
@@ -38,7 +40,7 @@ Designer: http://www.everaldo.com
 Icon Pack: Crystal SVG
 License: LGPL
 
-Icon:  scripts/img/reload.xcf (modified), src/qt/res/movies/update_spinner.mng
+Icon:  share/qt/img/reload.xcf (modified), src/qt/res/movies/update_spinner.mng
 Icon Pack: Kids
 Designer: Everaldo (Everaldo Coelho)
 License: GNU/GPL 
@@ -49,7 +51,5 @@ Designer: Vignoni David
 Site: http://www.oxygen-icons.org/
 License: Oxygen icon theme is dual licensed. You may copy it under the Creative Common Attribution-ShareAlike 3.0 License or the GNU Library General Public License.
 
-Icon: src/qt/res/icons/toolbar.png, src/qt/res/icons/toolbar_testnet.png,
-      src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png
-Designer: Jonas Schnelli (based on the original bitcoin logo from Bitboy)
-License: MIT
+Icon: src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png
+Designer: Martijn Van Meel
