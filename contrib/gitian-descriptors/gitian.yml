@@ -1,5 +1,5 @@
 ---
-name: "vdinar"
+name: "vDinar"
 suites:
 - "lucid"
 architectures:
@@ -40,7 +40,7 @@ script: |
   make $MAKEOPTS install
   cd ..
   #
-  unzip vdinar.zip
+  unzip vDinar.zip
   cp -R vDinar $OUTDIR/src
   cp -R vDinar nsis
   cd vDinar
