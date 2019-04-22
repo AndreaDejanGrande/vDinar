@@ -8,7 +8,9 @@
 
 2.1 changes
 =============
-- New donations function
+- New donations function (k25 fork)
+- New RPC functions (getblockchaininfo, getnetworkinfo)
+- RPC functions revisited (getinfo, getmininginfo)
 - SerboCroatian translations completed
 - Docs updated
 - UI slightly fixed
