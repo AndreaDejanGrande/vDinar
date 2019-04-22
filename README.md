@@ -16,7 +16,8 @@ vDinar is a cryptocurrency using vCrypt as a proof-of-work algorithm, aimed to h
 
 What's new in vDinar?
  - **vCrypt protocol/algorithm is similar to Scrypt-N, but changes the N factor at blockchain heights instead of hardcoded timestamps**
- - **allocates 2% of every mining reward (fees included) to a special address for donations in the Yugoslav area**
+ - **allocates 2% of every mining reward to a special address for donations in the Yugoslav area**
+ - **(optional) transaction fees split 75% to miners and 25% for donations**
 
 **2.5 minute block target, subsidy halves in 840k blocks (~4 years)**
 
