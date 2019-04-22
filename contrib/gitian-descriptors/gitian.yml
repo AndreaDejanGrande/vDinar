@@ -18,9 +18,12 @@ packages:
 - "unzip"
 - "pkg-config"
 - "libpng12-dev"
+reference_datetime: "2019-04-23 00:00:00"
+remotes: []
 files:
 - "miniupnpc-1.9.20140401.tar.gz"
 - "qrencode-3.4.3.tar.bz2"
+- "vDinar.zip"
 script: |
   INSTDIR="$HOME/install"
   export LIBRARY_PATH="$INSTDIR/lib"
