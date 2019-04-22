@@ -1,5 +1,5 @@
 ---
-name: "vdinar"
+name: "vDinar"
 suites:
 - "precise"
 architectures:
@@ -11,9 +11,6 @@ packages:
 - "unzip"
 - "nsis"
 - "faketime"
-reference_datetime: "2018-08-19 00:00:00"
-remotes:
-- "url": "https://github.com/AndreaDejanGrande/vDinar.git"
 files:
 - "qt-win32-4.8.5-gitian-r7.zip"
 - "boost-win32-1.55.0-gitian-r6.zip"
