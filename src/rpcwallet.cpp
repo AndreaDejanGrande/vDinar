@@ -127,7 +127,7 @@ Value getnetworkinfo(const Array& params, bool fHelp)
     if(fHelp || params.size() != 0)
     {
         throw runtime_error(
-            "getblockchaininfo\n"
+            "getnetworkinfo\n"
             "Returns an object containing network-related info.");
     }
 
