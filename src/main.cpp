@@ -2177,7 +2177,7 @@ bool CBlock::CheckBlock(const CBlock* block, uint32_t nHeight, CValidationState 
     if (!vtx[1].IsCoinBase()) {
         if(vtx[1].vin.size() != 1)
         {
-            return state.DoS(100, error("CheckBlock() : second transaction's vin size not 1 but %llu", vtx[1].vin.size()));
+            return state.DoS(100, error("CheckBlock() : second transaction's vin size not 1 but %lu", vtx[1].vin.size()));
         }
         if(!vtx[1].vin[0].prevout.IsNull())
         {
@@ -4230,7 +4230,7 @@ public:
 CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, const CScript& scriptDonationsPubKeyIn)
 {
     // Create new block
-    auto_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
+    unique_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
     if(!pblocktemplate.get())
         return NULL;
     CBlock *pblock = &pblocktemplate->block; // pointer for convenience
@@ -4632,7 +4632,7 @@ void static vDinarMiner(CWallet *pwallet)
         unsigned int nTransactionsUpdatedLast = nTransactionsUpdated;
         CBlockIndex* pindexPrev = pindexBest;
 
-        auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
+        unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
         if (!pblocktemplate.get())
             return;
         CBlock *pblock = &pblocktemplate->block;
@@ -4666,7 +4666,7 @@ void static vDinarMiner(CWallet *pwallet)
             unsigned int nHashesDone = 0;
 
             uint256 thash;
-            char scratchpad[(n * 128) + 63];
+            char* scratchpad = new char[(n * 128) + 63];
             loop
             {
                 vcrypt_1_1_256_sp(BEGIN(pblock->nVersion), BEGIN(thash), scratchpad, n);
@@ -4684,6 +4684,7 @@ void static vDinarMiner(CWallet *pwallet)
                 if ((pblock->nNonce & 0xFF) == 0)
                     break;
             }
+            delete scratchpad;
 
             // Meter hashes/sec
             static int64 nHashCounter;

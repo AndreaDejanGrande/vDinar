@@ -367,6 +367,7 @@ void vcrypt_detect_sse2()
 
 void vcrypt_1_1_256(const char *input, char *output, uint32_t n)
 {
-	char scratchpad[(n * 128) + 63];
+	char* scratchpad = new char[(n * 128) + 63];
 	vcrypt_1_1_256_sp(input, output, scratchpad, n);
+	delete scratchpad;
 }
