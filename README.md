@@ -7,7 +7,7 @@ Copyright (c) 2009-2014 Bitcoin Developers
 
 Copyright (c) 2011-2014 Litecoin Developers
 
-Copyright (c) 2017-2019 vDinar Developers
+Copyright (c) 2017-2020 vDinar Developers
 
 What is vDinar? <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 ----------------
