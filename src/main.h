@@ -1346,6 +1346,9 @@ public:
     // memory only
     mutable std::vector<uint256> vMerkleTree;
 
+    // stored for orphan blocks only for later checks
+    unsigned int nFactorOrphan;
+
     CBlock()
     {
         SetNull();
@@ -1541,7 +1544,7 @@ public:
 
     // Store block on disk
     // if dbp is provided, the file is known to already reside on disk
-    bool AcceptBlock(CValidationState &state, CDiskBlockPos *dbp = NULL);
+    bool AcceptBlock(CValidationState &state, bool checkOrphan, CDiskBlockPos *dbp = NULL);
 };
 
 

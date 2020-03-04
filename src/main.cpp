@@ -2227,7 +2227,7 @@ bool CBlock::CheckBlock(const CBlock* block, uint32_t nHeight, CValidationState 
     return true;
 }
 
-bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
+bool CBlock::AcceptBlock(CValidationState &state, bool checkOrphan, CDiskBlockPos *dbp)
 {
     // Check for duplicate
     uint256 hash = GetHash();
@@ -2243,6 +2243,10 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
             return state.DoS(10, error("AcceptBlock() : prev block not found"));
         pindexPrev = (*mi).second;
         nHeight = pindexPrev->nHeight+1;
+
+        // Check supposed N factor if orphan block
+        if (checkOrphan && nFactorOrphan != vCrypt_N(nHeight))
+            return state.DoS(100, error("AcceptBlock() : incorrect supposed N factor"));
 
         // Check proof of work
         if (nBits != GetNextWorkRequired(pindexPrev, this))
@@ -2343,6 +2347,21 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
 
     // Preliminary checks
     uint32_t nHeight = (uint32_t)CBlockLocator(pblock->hashPrevBlock).GetHeight() + 1;
+
+    // If we don't already have its previous block, check the orphan block as being the highest block on the sending node.
+    // This is done to avoid invalid heights when getting the last block as a placeholder for initial download.
+    if(pblock->hashPrevBlock != 0 && !mapBlockIndex.count(pblock->hashPrevBlock))
+    {
+        if(pfrom)
+        {
+            nHeight = (uint32_t)pfrom->nStartingHeight;
+        }
+        else
+        {
+            return state.Invalid(error("ProcessBlock() : received orphan block from disconnected node"));
+        }
+    }
+
     if (!pblock->CheckBlock(pblock, nHeight, state))
         return error("ProcessBlock() : CheckBlock FAILED");
 
@@ -2374,6 +2393,7 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
         // Accept orphans as long as there is a node to request its parents from
         if (pfrom) {
             CBlock* pblock2 = new CBlock(*pblock);
+            pblock2->nFactorOrphan = vCrypt_N(nHeight);
             mapOrphanBlocks.insert(make_pair(hash, pblock2));
             mapOrphanBlocksByPrev.insert(make_pair(pblock2->hashPrevBlock, pblock2));
 
@@ -2384,7 +2404,7 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
     }
 
     // Store to disk
-    if (!pblock->AcceptBlock(state, dbp))
+    if (!pblock->AcceptBlock(state, false, dbp))
         return error("ProcessBlock() : AcceptBlock FAILED");
 
     // Recursively process any orphan blocks that depended on this one
@@ -2400,7 +2420,7 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
             CBlock* pblockOrphan = (*mi).second;
             // Use a dummy CValidationState so someone can't setup nodes to counter-DoS based on orphan resolution (that is, feeding people an invalid block based on LegitBlockX in order to get anyone relaying LegitBlockX banned)
             CValidationState stateDummy;
-            if (pblockOrphan->AcceptBlock(stateDummy))
+            if (pblockOrphan->AcceptBlock(stateDummy, true))
                 vWorkQueue.push_back(pblockOrphan->GetHash());
             mapOrphanBlocks.erase(pblockOrphan->GetHash());
             delete pblockOrphan;
