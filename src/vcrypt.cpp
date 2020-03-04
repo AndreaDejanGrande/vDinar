@@ -62,7 +62,7 @@ uint32_t vCrypt_N(uint32_t nHeight)
 
 uint32_t vCrypt_N_Factor(uint32_t nHeight)
 {
- uint32_t nFactor = 9; // DEFAULT vCRYPT N FACTOR
+ uint32_t nFactor = 10; // DEFAULT vCRYPT N FACTOR
 
  uint32_t left = nHeight;
  uint32_t span = 420480; // ~2 years, ~4 years, ~8 years, ~2^n years
