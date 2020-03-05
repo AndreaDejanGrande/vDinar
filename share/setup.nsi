@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 2.1.0.0
+!define VERSION 2.2.0.0
 !define COMPANY "vDinar"
 !define URL https://www.vdinar.info/
 
