@@ -2177,7 +2177,7 @@ bool CBlock::CheckBlock(const CBlock* block, uint32_t nHeight, CValidationState 
     if (!vtx[1].IsCoinBase()) {
         if(vtx[1].vin.size() != 1)
         {
-            return state.DoS(100, error("CheckBlock() : second transaction's vin size not 1 but %lu", vtx[1].vin.size()));
+            return state.DoS(100, error("CheckBlock() : second transaction's vin size not 1 but %u", vtx[1].vin.size()));
         }
         if(!vtx[1].vin[0].prevout.IsNull())
         {
