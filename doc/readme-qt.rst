@@ -1,4 +1,4 @@
-vDinar-Qt: Qt4 GUI for vDinar
+vDinar-Qt: Qt5 GUI for vDinar
 ===============================
 
 Build instructions
@@ -7,28 +7,8 @@ Build instructions
 Debian
 -------
 
-First, make sure that the required packages for Qt4 development of your
+First, make sure that the required packages for Qt5 development of your
 distribution are installed, these are
-
-::
-
-for Debian and Ubuntu  <= 11.10 :
-
-::
-
-    apt-get install qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev \
-        libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev \
-        libssl-dev libdb4.8++-dev libminiupnpc-dev
-
-for Ubuntu >= 12.04 (please read the 'Berkely DB version warning' below):
-
-::
-
-    apt-get install qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev \
-        libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev \
-        libssl-dev libdb++-dev libminiupnpc-dev
-
-For Qt 5 you need the following, otherwise you get an error with lrelease when running qmake:
 
 ::
 

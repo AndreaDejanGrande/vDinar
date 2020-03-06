@@ -23,7 +23,7 @@ Dependencies
  Library     Purpose           Description
  -------     -------           -----------
  libssl      SSL Support       Secure communications
- libdb4.8    Berkeley DB       Blockchain & wallet storage
+ libdb5.3    Berkeley DB       Blockchain & wallet storage
  libboost    Boost             C++ Library
  miniupnpc   UPnP Support      Optional firewall-jumping support
 
@@ -46,11 +46,11 @@ Licenses of statically linked libraries:
  miniupnpc     New (3-clause) BSD license
 
 - Versions used in this release:
--  GCC           4.3.3
+-  GCC           7.4.0
 -  OpenSSL       1.1.1
--  Berkeley DB   4.8.30.NC
--  Boost         1.37
--  miniupnpc     1.6
+-  Berkeley DB   5.3
+-  Boost         1.62
+-  miniupnpc     2.1.20191224
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
@@ -63,16 +63,16 @@ for Ubuntu 12.04:
 
 	sudo apt-get install libboost-all-dev
 
- db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
+ db5.3 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
 
  Ubuntu precise has packages for libdb5.1-dev and libdb5.1++-dev,
  but using these will break binary wallet compatibility, and is not recommended.
 
 for other Ubuntu & Debian:
 
-	sudo apt-get install libdb4.8-dev
-	sudo apt-get install libdb4.8++-dev
-	sudo apt-get install libboost1.37-dev
+	sudo apt-get install libdb5.3-dev
+	sudo apt-get install libdb5.3++-dev
+	sudo apt-get install libboost1.62-dev
  (If using Boost 1.37, append -mt to the boost libraries in the makefile)
 
 Optional:
@@ -88,8 +88,8 @@ symbols, which reduces the executable size by about 90%.
 
 miniupnpc
 ---------
-	tar -xzvf miniupnpc-1.6.tar.gz
-	cd miniupnpc-1.6
+	tar -xzvf miniupnpc-*.tar.gz
+	cd miniupnpc-*
 	make
 	sudo su
 	make install
@@ -97,7 +97,7 @@ miniupnpc
 
 Berkeley DB
 -----------
-You need Berkeley DB 4.8.  If you have to build Berkeley DB yourself:
+If you have to build Berkeley DB yourself:
 
 	../dist/configure --enable-cxx
 	make
