@@ -49,6 +49,7 @@
 #include <QSettings>
 #include <QDesktopWidget>
 #include <QListWidget>
+#include <QScreen>
 
 #include <iostream>
 
@@ -448,9 +449,10 @@ void BitcoinGUI::restoreWindowGeometry()
     QSize size = settings.value("nWindowSize", QSize(850, 550)).toSize();
     if (!pos.x() && !pos.y())
     {
-        QRect screen = QApplication::desktop()->screenGeometry();
-        pos.setX((screen.width()-size.width())/2);
-        pos.setY((screen.height()-size.height())/2);
+        QScreen *screen = QApplication::primaryScreen();
+	QRect screenGeometry = screen->geometry();
+        pos.setX((screenGeometry.width()-size.width())/2);
+        pos.setY((screenGeometry.height()-size.height())/2);
     }
     resize(size);
     move(pos);
