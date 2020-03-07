@@ -22,10 +22,10 @@ Dependencies
 Libraries you need to download separately and build:
 
                 default path               download
-OpenSSL         \openssl-1.0.1c-mgw        http://www.openssl.org/source/
-Berkeley DB     \db-4.8.30.NC-mgw          http://www.oracle.com/technology/software/products/berkeley-db/index.html
-Boost           \boost-1.50.0-mgw          http://www.boost.org/users/download/
-miniupnpc       \miniupnpc-1.6-mgw         http://miniupnp.tuxfamily.org/files/
+OpenSSL         \openssl-1.1.1             http://www.openssl.org/source/
+Berkeley DB     \db-18.1.32                https://www.oracle.com/database/technologies/related/berkeleydb-downloads.html
+Boost           \boost-1.50.0              http://www.boost.org/users/download/
+miniupnpc       \miniupnpc-2.1.20191224    http://miniupnp.tuxfamily.org/files/
 
 Their licenses:
 
@@ -36,10 +36,10 @@ Their licenses:
 
 Versions used in this release:
 
-	OpenSSL      1.0.1c
-	Berkeley DB  4.8.30.NC
+	OpenSSL      1.1.1
+	Berkeley DB  18.1.32
 	Boost        1.50.0
-	miniupnpc    1.6
+	miniupnpc    2.1.20191224
 
 
 OpenSSL
@@ -49,7 +49,7 @@ MSYS shell:
 un-tar sources with MSYS 'tar xfz' to avoid issue with symlinks (OpenSSL ticket 2377)
 change 'MAKE' env. variable from 'C:\MinGW32\bin\mingw32-make.exe' to '/c/MinGW32/bin/mingw32-make.exe'
 
-	cd /c/openssl-1.0.1c-mgw
+	cd /c/openssl-1.1.1
 	./config
 	make
 
@@ -57,7 +57,7 @@ Berkeley DB
 -----------
 MSYS shell:
 
-	cd /c/db-4.8.30.NC-mgw/build_unix
+	cd /c/db-18.1.32/build_unix
 	sh ../dist/configure --enable-mingw --enable-cxx
 	make
 
@@ -66,7 +66,7 @@ Boost
 MSYS shell:
 
 	downloaded boost jam 3.1.18
-	cd \boost-1.50.0-mgw
+	cd \boost-1.50.0
 	bjam toolset=gcc --build-type=complete stage
 
 MiniUPnPc
@@ -75,7 +75,7 @@ UPnP support is optional, make with `USE_UPNP=` to disable it.
 
 MSYS shell:
 
-	cd /c/miniupnpc-1.6-mgw
+	cd /c/miniupnpc-2.1.20191224
 	make -f Makefile.mingw
 	mkdir miniupnpc
 	cp *.h miniupnpc/
@@ -84,6 +84,6 @@ vDinar
 -------
 MSYS shell:
 
-	cd \vdinar\src
+	cd \vDinar\src
 	mingw32-make -f makefile.mingw
 	strip vdinard.exe

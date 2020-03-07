@@ -23,8 +23,8 @@ for local donations.
 
 Setup
 ---------------------
-You need the Qt4 run-time libraries to run vDinar-Qt. On Debian or Ubuntu:
-	`sudo apt-get install libqtgui4`
+You need the Qt5 run-time libraries to run vDinar-Qt. On Debian or Ubuntu:
+	`sudo apt-get install libqt5gui5`
 
 Unpack the files into a directory and run:
 

@@ -14,3 +14,13 @@
 - SerboCroatian translations completed
 - Docs updated
 - UI slightly fixed
+
+2.2 changes
+=============
+- Fixed sync issue for orphan blocks
+- Upgraded to Qt 5
+- Upgraded to OpenSSL 1.1.1
+- Upgraded to Berkeley DB 18.1.32
+- Upgraded to MiniUPnP 2.1.20191224
+- Substituted obsolete Gitian descriptors with MXE instructions
+- Fixed minor bugs (code, UI and getmininginfo RPC function)
