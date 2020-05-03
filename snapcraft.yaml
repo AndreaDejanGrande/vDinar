@@ -1,0 +1,80 @@
+name: vdinar
+title: vDinar
+icon: share/pixmaps/bitcoin256.png
+version: "2.2"
+summary: Regionally oriented cryptocurrency from former Yugoslavia
+description: |
+  vDinar is a regionally oriented cryptocurrency from former Yugoslavia with an ASIC-resistant mining algorithm and a block structure designed to allocate 2% of every reward and 25% of every transaction fee to a local donation fund.
+
+base: core18
+license: MIT
+
+architectures:
+  - build-on: amd64
+  - build-on: armhf
+  - build-on: i386
+  - build-on: ppc64el
+
+parts:
+  desktop-qt5:
+    source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
+    source-subdir: qt
+    plugin: make
+    make-parameters: ["FLAVOR=qt5"]
+    build-packages:
+      - build-essential
+      - qtbase5-dev
+      - dpkg-dev
+    stage-packages:
+      - libxkbcommon0
+      - ttf-ubuntu-font-family
+      - dmz-cursor-theme
+      - light-themes
+      - adwaita-icon-theme
+      - gnome-themes-standard
+      - shared-mime-info
+      - libqt5gui5
+      - libgdk-pixbuf2.0-0
+      - libqt5svg5 # for loading icon themes which are svg
+      - locales-all
+      - xdg-user-dirs
+      - fcitx-frontend-qt5
+  vdinar:
+    plugin: qmake
+    qt-version: qt5
+    source: .
+    project-files:
+      - vdinar-qt.pro
+    build-packages:
+      - qt5-default
+      - qt5-qmake
+      - libqt5gui5
+      - libqt5core5a
+      - libqt5dbus5
+      - qttools5-dev-tools
+      - libssl-dev
+      - libdb5.3-dev
+      - libdb5.3++-dev
+      - libboost-all-dev
+      - libminiupnpc-dev
+    stage-packages:
+      - libssl-dev
+      - libdb5.3-dev
+      - libdb5.3++-dev
+      - libboost-all-dev
+      - libminiupnpc-dev
+    after: [desktop-qt5]
+    override-build: |
+      qmake
+      make
+      mv vdinar-qt $SNAPCRAFT_PART_INSTALL
+      mv share/pixmaps/bitcoin128.png $SNAPCRAFT_PART_INSTALL/usr/share/pixmaps
+      mv contrib/debian/vdinar-qt.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
+      sed 's+/usr/bin/vdinar-qt+/snap/bin/vdinar+g' $SNAPCRAFT_PART_INSTALL/usr/share/applications/vdinar-qt.desktop
+      sed 's+/usr/share/pixmaps/bitcoin128.png+${SNAP}/usr/share/pixmaps/bitcoin128.png+g' $SNAPCRAFT_PART_INSTALL/usr/share/applications/vdinar-qt.desktop
+
+apps:
+  vdinar:
+    command: desktop-launch $SNAP/vdinar-qt
+    desktop: usr/share/applications/vdinar-qt.desktop
+    plugs: [network, network-bind, unity7]
