@@ -7,7 +7,7 @@ Zaštita autorskih prava (c) 2009-2014 Razvijači Bitcoin-a
 
 Zaštita autorskih prava (c) 2011-2014 Razvijači Litecoin-a
 
-Zaštita autorskih prava (c) 2017-2020 Razvijači virtualnog Dinara
+Zaštita autorskih prava (c) 2017-2021 Razvijači virtualnog Dinara
 
 Šta je vDinar? <img align="left" src="https://vdinar.jugoslaven.com/slike/Ikona-128.png" width="32px" height="32px">
 ----------------
