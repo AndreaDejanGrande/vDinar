@@ -1,7 +1,7 @@
 name: vdinar
 title: vDinar
 icon: share/pixmaps/bitcoin256.png
-version: "2.2"
+version: "2.2.1"
 summary: Regionally oriented cryptocurrency from former Yugoslavia
 description: |
   vDinar is a regionally oriented cryptocurrency from former Yugoslavia with an ASIC-resistant mining algorithm and a block structure designed to allocate 2% of every reward and 25% of every transaction fee to a local donation fund.
