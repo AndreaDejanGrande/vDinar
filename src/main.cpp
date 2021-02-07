@@ -1647,7 +1647,7 @@ bool CBlock::ConnectBlock(CValidationState &state, CBlockIndex* pindex, CCoinsVi
     // Check it again in case a previous version let a bad block in
     CBlockHeader header = pindex->GetBlockHeader();
     CBlock block = CBlock(header);
-    if (!CheckBlock(&block, pindex->nHeight, state, !fJustCheck, !fJustCheck))
+    if (!CheckBlock(&block, pindex->nHeight, state, false, !fJustCheck, !fJustCheck))
         return false;
 
     // verify that the view's current state corresponds to the previous block
@@ -2135,7 +2135,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 }
 
 
-bool CBlock::CheckBlock(const CBlock* block, uint32_t nHeight, CValidationState &state, bool fCheckPOW, bool fCheckMerkleRoot) const
+bool CBlock::CheckBlock(const CBlock* block, uint32_t nHeight, CValidationState &state, bool flexible, bool fCheckPOW, bool fCheckMerkleRoot) const
 {
     // These are checks that are independent of context
     // that can be verified before saving an orphan block.
@@ -2144,27 +2144,13 @@ bool CBlock::CheckBlock(const CBlock* block, uint32_t nHeight, CValidationState 
     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
         return state.DoS(100, error("CheckBlock() : size limits failed"));
 
-    // vDinar: Special short-term limits to avoid 10,000 BDB lock limit:
-    /*if (GetBlockTime() < 1376568000)  // stop enforcing 15 August 2013 00:00:00
-    {
-        // Rule is: #unique txids referenced <= 4,500
-        // ... to prevent 10,000 BDB lock exhaustion on old clients
-        set<uint256> setTxIn;
-        for (size_t i = 0; i < vtx.size(); i++)
-        {
-            setTxIn.insert(vtx[i].GetHash());
-            if (i > 1) continue; // skip coinbase txin (first and second transaction)
-            BOOST_FOREACH(const CTxIn& txin, vtx[i].vin)
-                setTxIn.insert(txin.prevout.hash);
-        }
-        size_t nTxids = setTxIn.size();
-        if (nTxids > 4500)
-            return error("CheckBlock() : 15 August maxlocks violation");
-    }*/
-
     // Check proof of work matches claimed amount
-    if (fCheckPOW && !CheckProofOfWork(GetPoWHash(vCrypt_N(nHeight)), block->nBits))
+    if (fCheckPOW && !CheckProofOfWork(GetPoWHash(vCrypt_N(nHeight)), block->nBits)) {
+        if (flexible)
+            return false;
+
         return state.DoS(50, error("CheckBlock() : proof of work failed"));
+    }
 
     // Check timestamp
     if (GetBlockTime() > GetAdjustedTime() + 2 * 60 * 60)
@@ -2346,24 +2332,37 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
         return state.Invalid(error("ProcessBlock() : already have block (orphan) %s", hash.ToString().c_str()));
 
     // Preliminary checks
-    uint32_t nHeight = (uint32_t)CBlockLocator(pblock->hashPrevBlock).GetHeight() + 1;
-
-    // If we don't already have its previous block, check the orphan block as being the highest block on the sending node.
-    // This is done to avoid invalid heights when getting the last block as a placeholder for initial download.
-    if(pblock->hashPrevBlock != 0 && !mapBlockIndex.count(pblock->hashPrevBlock))
-    {
-        if(pfrom)
-        {
-            nHeight = (uint32_t)pfrom->nStartingHeight;
-        }
-        else
-        {
+    uint32_t nHeight;
+    // These checks are just to filter garbage blocks. Parented blocks get checked directly with their real N factor,
+    // while orphan blocks go through a leveled filtering. The latter will be checked again with their confirmed height.
+    if(pblock->hashPrevBlock != 0 && !mapBlockIndex.count(pblock->hashPrevBlock)) {
+        // 3 expected cases:
+        // the orphan block is the last of a ~500 blocks round and expects the same N factor as the last parented block;
+        // the orphan block is the last of a ~500 blocks round but is behind the N factor span limit (N factor differs by 1);
+        // the orphan block is the highest block on the sending node, sent as a placeholder for initial download.
+        if(pfrom) {
+            // Case 1
+            nHeight = (uint32_t)mapBlockIndex.size();
+            if (!pblock->CheckBlock(pblock, nHeight, state, true)) {
+                // Case 2
+                nHeight = vCrypt_N_Height(vCrypt_N_Factor(nHeight) + 1);
+                if (!pblock->CheckBlock(pblock, nHeight, state, true)) {
+                    // Case 3
+                    nHeight = (uint32_t)pfrom->nStartingHeight;
+                    if (!pblock->CheckBlock(pblock, nHeight, state, true))
+                        // To compensate for the former flexible checks, the following error will be counted
+                        // as misbehaviour.
+                        return state.DoS(50, error("CheckBlock() : CheckBlock FAILED for orphan block"));
+                }
+            }
+        } else {
             return state.Invalid(error("ProcessBlock() : received orphan block from disconnected node"));
         }
+    } else {
+        nHeight = (uint32_t)CBlockLocator(pblock->hashPrevBlock).GetHeight() + 1;
+        if (!pblock->CheckBlock(pblock, nHeight, state, false))
+            return error("ProcessBlock() : CheckBlock FAILED");
     }
-
-    if (!pblock->CheckBlock(pblock, nHeight, state))
-        return error("ProcessBlock() : CheckBlock FAILED");
 
     CBlockIndex* pcheckpoint = Checkpoints::GetLastCheckpoint(mapBlockIndex);
     if (pcheckpoint && pblock->hashPrevBlock != hashBestChain)
@@ -2760,7 +2759,7 @@ bool VerifyDB(int nCheckLevel, int nCheckDepth)
         if (!block.ReadFromDisk(pindex))
             return error("VerifyDB() : *** block.ReadFromDisk failed at %d, hash=%s", pindex->nHeight, pindex->GetBlockHash().ToString().c_str());
         // check level 1: verify block validity
-        if (nCheckLevel >= 1 && !block.CheckBlock(&block, pindex->nHeight, state))
+        if (nCheckLevel >= 1 && !block.CheckBlock(&block, pindex->nHeight, state, false))
             return error("VerifyDB() : *** found bad block at %d, hash=%s\n", pindex->nHeight, pindex->GetBlockHash().ToString().c_str());
         // check level 2: verify undo validity
         if (nCheckLevel >= 2 && pindex) {
