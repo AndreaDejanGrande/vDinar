@@ -46,34 +46,43 @@
 
 uint32_t vCrypt_N(uint32_t nHeight)
 {
- uint32_t nMultiplicator = 1024; // DEFAULT vCRYPT N MULTIPLICATOR
+	uint32_t nMultiplicator = 1024; // DEFAULT vCRYPT N MULTIPLICATOR
 
- uint32_t left = nHeight;
- uint32_t span = 420480; // ~2 years, ~4 years, ~8 years, ~2^n years
- while(left > span)
- {
-  nMultiplicator *= 2;
-  left -= span;
-  span *= 2;
- }
+	uint32_t left = nHeight;
+	uint32_t span = 420480; // ~2 years, ~4 years, ~8 years, ~2^n years
+	while(left > span) {
+		nMultiplicator *= 2;
+		left -= span;
+		span *= 2;
+	}
 
- return nMultiplicator;
+	return nMultiplicator;
 }
 
 uint32_t vCrypt_N_Factor(uint32_t nHeight)
 {
- uint32_t nFactor = 10; // DEFAULT vCRYPT N FACTOR
+	uint32_t nFactor = 10; // DEFAULT vCRYPT N FACTOR
 
- uint32_t left = nHeight;
- uint32_t span = 420480; // ~2 years, ~4 years, ~8 years, ~2^n years
- while(left > span)
- {
-  nFactor++;
-  left -= span;
-  span *= 2;
- }
+	uint32_t left = nHeight;
+	uint32_t span = 420480; // ~2 years, ~4 years, ~8 years, ~2^n years
+	while(left > span) {
+		nFactor++;
+		left -= span;
+		span *= 2;
+	}
 
- return nFactor;
+	return nFactor;
+}
+
+uint32_t vCrypt_N_Height(uint32_t nFactor)
+{
+	uint32_t nHeight = 1;
+
+	uint32_t span = 420480;
+	for(nFactor -= 10; nFactor > 0; nFactor--) {
+		nHeight += span;
+		span *= 2;
+	}
 }
 
 static inline uint32_t be32dec(const void *pp)
